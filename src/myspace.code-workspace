@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "/Users/gjermund/github_skobba/esp8266-hello-world"
+		},
+		{
+			"name": "esp8266-epaper-wifi",
+			"path": "/Users/gjermund/github_skobba/esp8266-epaper-wifi"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.osx": {
+			"PATH": "/Users/gjermund/.platformio/penv/bin:/Users/gjermund/.platformio/penv:/tools/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Applications/Wireshark.app/Contents/MacOS",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}
