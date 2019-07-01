@@ -11,16 +11,34 @@
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
 
+#include <WiFiClientSecure.h>
 
 #define ONE_WIRE_BUS D4
 
+const char* host = "reisapi.ruter.no";
+const int httpsPort = 443;
+// Use web browser to view and copy
+// SHA1 fingerprint of the certificate
+const char fingerprint[] PROGMEM = "55 80 FF 07 52 F1 64 1C 6A B6 08 F8 40 A3 F1 ED BF 2B 6B 5F";
+
+
 //Web Server address to read/write from 
-const char *host = "http://arduinojson.org/example.json";
+const char *hostSample = "http://arduinojson.org/example.json";
+//const char *hostEntur = "https://api.entur.io/journey-planner/v2/graphql";
+const char *hostEntur = "https://reisapi.ruter.no/Place/GetPlaces/grefsen";
+
+
 
 const char* wifiName = "ssid";
 const char* wifiPass = "pwd";
 
-char graphqlQuery[] = "{\r\n  trip(\r\n    from: {\r\n        place: \"NSR:StopPlace:6035\"\r\n        name:\"Sinsen, Oslo\"\r\n    }\r\n    to: {\r\n        place:\"NSR:StopPlace:58366\"\r\n        name:\"Oslo, Oslo\"\r\n    }\r\n    numTripPatterns: 3\r\n    minimumTransferTime: 180\r\n    arriveBy: false\r\n  )\r\n\r\n  {\r\n    tripPatterns {\r\n      startTime\r\n      duration\r\n      legs {\r\n        line {\r\n          name\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n";
+//char graphqlQuery[] = '{\"query\":\"{\ntrip(from:{place:\\"NSR:StopPlace:6035\\"name:\\"Sinsen,Oslo\\"}to:{place:\\"NSR:StopPlace:58366\\"name:\\"Oslo,Oslo\\"}¨numTripPatterns:3\nminimumTransferTime:180\narriveBy:false\n)\n\n{\ntripPatterns{\nstartTime\nduration\nlegs{\nline{\nname\n}\n}\n}\n}\n}\n\",\"variables\":null}';
+
+//char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
+
+char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
+
+char graphqlQuery[] = "\"{\"query\":\"{\ntrip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen,Oslo\"}to:{place:\"NSR:StopPlace:58366\"name:\"Oslo,Oslo\"}¨numTripPatterns:3\nminimumTransferTime:180\narriveBy:false\n)\n\n{\ntripPatterns{\nstartTime\nduration\nlegs{\nline{\nname\n}\n}\n}\n}\n}\n\",\"variables\":null}\"";
 
 
 float tempC = 0;
@@ -87,54 +105,65 @@ void loop() {
   // delay(5000);
 
 
-  HTTPClient http;    //Declare object of class HTTPClient
- 
-  Serial.print("Request Link:");
+  // Use WiFiClientSecure class to create TLS connection
+  WiFiClientSecure client;
+  Serial.print("connecting to ");
   Serial.println(host);
-  
-  http.begin(host);     //Specify request destination
-  
-  int httpCode = http.GET();            //Send the request
-  String payload = http.getString();    //Get the response payload from server
- 
-  Serial.print("Response Code:"); //200 is OK
-  Serial.println(httpCode);   //Print HTTP return code
- 
-  Serial.print("Returned data from Server:");
-  Serial.println(payload);    //Print request response payload
-  
-  if(httpCode == 200)
-  {
-    /* 
-    // Allocate JsonBuffer
-    // Use arduinojson.org/assistant to compute the capacity.
-    const size_t capacity = JSON_OBJECT_SIZE(3) + JSON_ARRAY_SIZE(2) + 60;
-    DynamicJsonBuffer jsonBuffer(capacity);
-  
-   // Parse JSON object
-    JsonObject& root = jsonBuffer.parseObject(payload);
-    if (!root.success()) {
-      Serial.println(F("Parsing failed!"));
-      return;
-    }
-  
-  */
 
-    // Decode JSON/Extract values
-    Serial.println(F("Response:"));
-    show("payload: " + payload);
-    display.update();
-    // Serial.println(root["sensor"].as<char*>());
-    // Serial.println(root["time"].as<char*>());
-    // Serial.println(root["data"][0].as<char*>());
-    // Serial.println(root["data"][1].as<char*>());
+  Serial.printf("Using fingerprint '%s'\n", fingerprint);
+  client.setFingerprint(fingerprint);
+
+  if (!client.connect(host, httpsPort)) {
+    Serial.println("connection failed");
+    return;
   }
-  else
-  {
-    Serial.println("Error in response");
+
+    /*
+    String url = "/Place/GetPlaces/grefsen";
+    String url = "/line/GetLinesByStopID/3012120";
+  
+   */
+
+
+  String url = "/line/GetLinesByStopID/3012120";
+  Serial.print("requesting URL: ");
+  Serial.println(url);
+
+  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
+               "Host: " + host + "\r\n" +
+               "User-Agent: BuildFailureDetectorESP8266\r\n" +
+               "Connection: close\r\n\r\n");
+
+  Serial.println("request sent");
+  while (client.connected()) {
+    String line = client.readStringUntil('\n');
+    if (line == "\r") {
+      Serial.println("headers received");
+      break;
+    }
   }
- 
-  http.end();  //Close connection
+  String line = client.readStringUntil('\n');
+  if (line.startsWith("{\"state\":\"success\"")) {
+    Serial.println("esp8266/Arduino CI successfull!");
+  } else {
+    Serial.println("esp8266/Arduino CI has failed");
+    //show("esp8266/Arduino CI has failed");
+    //display.update();
+  }
+  
+  show(line);
+  display.update();
+
+  Serial.println("reply was:");
+  Serial.println("==========");
+  Serial.println(line);
+  Serial.println("==========");
+  Serial.println("closing connection");
+
+
+
+
+
   
   delay(15000);  //GET Data at every 5 seconds
 

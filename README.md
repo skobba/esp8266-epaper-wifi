@@ -12,6 +12,9 @@ https://platformio.org/lib
 # Wifi and json
 https://circuits4you.com/2019/01/11/nodemcu-esp8266-arduino-json-parsing-example/
 
+# HTTPS
+https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/HTTPSRequest/HTTPSRequest.ino
+
 # Platformio
 brew install platformio
 
