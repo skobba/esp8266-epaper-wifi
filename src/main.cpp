@@ -1,13 +1,15 @@
-#include <Arduino.h>
-//#include <OneWire.h>
 #include <GxEPD.h>
 #include <GxGDEW042T2/GxGDEW042T2.h>
 #include <Fonts/FreeMonoBold12pt7b.h>
 #include <GxIO/GxIO_SPI/GxIO_SPI.h>
 #include <GxIO/GxIO.h>
 
-GxIO_Class io(SPI, /*CS=D8*/ SS, /*DC=D3*/ 0, /*RST=D4*/ 2); // arbitrary selection of D3(=0), D4(=2), selected for default of GxEPD_Class
-GxEPD_Class display(io, /*RST=D4*/ 2, /*BUSY=D2*/ 4); // default selection of D4(=2), D2(=4)
+#define ONE_WIRE_BUS D4
+
+float tempC = 0;
+
+GxIO_Class io(SPI, 15, 4, 5);
+GxEPD_Class display(io,  5,  16);
 
 void setup() {
   Serial.begin(9600);
@@ -15,7 +17,9 @@ void setup() {
   display.init();
 }
 
-void showStuff()
+
+
+void show()
 {
   const char* name = "FreeMonoBold12pt7b";
   const GFXfont* f = &FreeMonoBold12pt7b;
@@ -27,15 +31,16 @@ void showStuff()
   display.setRotation(2);
   display.setFont(f);
   display.setTextColor(GxEPD_WHITE);
-  display.fillRect(box_x, box_y, box_w, box_h, GxEPD_BLACK);
-  display.setCursor(box_x+15, box_y + 16);
-  display.print("LOV & ORDEN");
+  //display.fillRect(box_x, box_y, box_w, box_h, GxEPD_BLACK);
+  display.fillRect(0, 0, 380, 280, GxEPD_BLACK);
 
+  display.setCursor(box_x+15, cursor_y+88);
+  display.print("dette er en test");
   display.updateWindow(box_x, box_y, box_w, box_h, true);
 }
 
 void loop() {
-  showStuff();
+  show();
   display.update();
   delay(5000);
 }
