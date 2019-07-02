@@ -15,23 +15,36 @@
 
 #define ONE_WIRE_BUS D4
 
+// Web Server address to read/write from 
+const char *hostSample = "http://arduinojson.org/example.json";
+//const char *hostEntur = "https://api.entur.io/journey-planner/v2/graphql";
+const char *hostEntur = "https://reisapi.ruter.no/Place/GetPlaces/grefsen";
 
-// *.entur.io - use web browser to view and copy
-// SHA1 fingerprint of the certificate
-const char fingerprint[] PROGMEM = "C1 E1 33 B9 35 53 CF C3 22 B4 21 9C 6D 97 59 43 1B 78 C4 08";
-const char* host = "api.entur.io";
+// HTTPS
+const char* host = "reisapi.ruter.no";
 const int httpsPort = 443;
+
+// Use web browser to view and copy
+// SHA1 fingerprint of the certificate
+const char fingerprint[] PROGMEM = "55 80 FF 07 52 F1 64 1C 6A B6 08 F8 40 A3 F1 ED BF 2B 6B 5F";
+
+
+
 
 
 const char* wifiName = "Telenor7901rak";
 const char* wifiPass = "ixmlvfkyfegyo";
 
+//char graphqlQuery[] = '{\"query\":\"{\ntrip(from:{place:\\"NSR:StopPlace:6035\\"name:\\"Sinsen,Oslo\\"}to:{place:\\"NSR:StopPlace:58366\\"name:\\"Oslo,Oslo\\"}¨numTripPatterns:3\nminimumTransferTime:180\narriveBy:false\n)\n\n{\ntripPatterns{\nstartTime\nduration\nlegs{\nline{\nname\n}\n}\n}\n}\n}\n\",\"variables\":null}';
+
+//char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
 
 char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
 
-char graphqlQuery[] = "{}";
+char graphqlQuery[] = "\"{\"query\":\"{\ntrip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen,Oslo\"}to:{place:\"NSR:StopPlace:58366\"name:\"Oslo,Oslo\"}¨numTripPatterns:3\nminimumTransferTime:180\narriveBy:false\n)\n\n{\ntripPatterns{\nstartTime\nduration\nlegs{\nline{\nname\n}\n}\n}\n}\n}\n\",\"variables\":null}\"";
 
 
+float tempC = 0;
 
 GxIO_Class io(SPI, 15, 4, 5);
 GxEPD_Class display(io,  5,  16);
@@ -60,9 +73,13 @@ void setup() {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());   //You can get IP address assigned to ESP
 
+
   // Setup display
   display.init();
+
 }
+
+
 
 void show(String msg)
 {
@@ -107,41 +124,26 @@ void loop() {
     /*
     String url = "/Place/GetPlaces/grefsen";
     String url = "/line/GetLinesByStopID/3012120";
-    String url = "/journey-planner/v2/graphql"
   
    */
 
 
-  String url = "/journey-planner/v2/graphql";
+  String url = "/line/GetLinesByStopID/3012120";
   Serial.print("requesting URL: ");
   Serial.println(url);
-  Serial.print("Content-Length: ");
-  Serial.println(sizeof(graphqlQuery));
-  Serial.println("Content:");
-  Serial.println(graphqlQuery);
 
   // Make a HTTP request (1)
-  // client.print(String("POST ") + url + " HTTP/1.1\r\n" +
-  //              "Host: " + host + "\r\n" +
-  //              "User-Agent: BuildFailureDetectorESP8266\r\n" +
-  //              "Connection: close\r\n\r\n");
+  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
+               "Host: " + host + "\r\n" +
+               "User-Agent: BuildFailureDetectorESP8266\r\n" +
+               "Connection: close\r\n\r\n");
 
-  client.println("POST /journey-planner/v2/graphql HTTP/1.1");
-  client.println("Host: api.entur.io");
-  client.println("Cache-Control: no-cache");
-  client.println("Content-Type: application/json");
-  client.print("Content-Length: ");
-  client.println(sizeof(graphqlQuery));
+  // Make a HTTP request (2)
+  client.println("GET " + url + " HTTP/1.1");
+  client.println("GET " + url + " HTTP/1.1");
+  client.println("Host: " + " ");
+  client.println("Connection: close\r\n\r\n");
   client.println();
-  client.println(graphqlQuery);
-
-
-  // // Make a HTTP request (2)
-  // client.println("GET " + url + " HTTP/1.1");
-  // client.println("GET " + url + " HTTP/1.1");
-  // client.println("Host: " + " ");
-  // client.println("Connection: close\r\n\r\n");
-  // client.println();
 
 
   Serial.println("request sent");
