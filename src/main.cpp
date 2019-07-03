@@ -23,14 +23,33 @@ const char* host = "api.entur.io";
 const int httpsPort = 443;
 
 
-const char* wifiName = "Telenor7901rak";
-const char* wifiPass = "ixmlvfkyfegyo";
+// const char* wifiName = "Telenor7901rak";
+// const char* wifiPass = "ixmlvfkyfegyo";
+
+const char* wifiName = "Skobbis2";
+const char* wifiPass = "r3plikant";
 
 
 char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
 
+// char graphqlQuery[] = "{\r\n  \"trip\":(\r\n    \"from\": {\r\n        \"place\": \"NSR:StopPlace:6035\"\r\n        \"name\":\"Sinsen, Oslo\"\r\n    }\r\n    to: {\r\n        place:\"NSR:StopPlace:58366\"\r\n        name:\"Oslo, Oslo\"\r\n    }\r\n    numTripPatterns: 3\r\n    \"minimumTransferTime\": 180\r\n    \"arriveBy\": false\r\n  )\r\n\r\n  {\r\n    \"tripPatterns\" {\r\n      \"startTime\"\r\n      \"duration\"\r\n      \"legs\" {\r\n        \"line\" {\r\n          \"name\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}";
+
+
+//Unexpected character ('t' (code 116)): was expecting double-quote to start field name
+//char graphqlQuery[] = "{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen,Oslo\"}to:{place:\"NSR:StopPlace:58366\"name:\"Oslo,Oslo\"}numTripPatterns:3minimumTransferTime:180arriveBy:false){tripPatterns{startTimedurationlegs{line{name}}}}}";
+
+// char graphqlQuery[] = "{\r\n\"trip\"(\"from\":{\"place\":\"NSR:StopPlace:6035\" \"name\":\"Sinsen,Oslo\"}\"to\":{\"place\":\"NSR:StopPlace:58366\" \"name\":\"Oslo,Oslo\"}\"numTripPatterns\":3 \"minimumTransferTime\":180 \"arriveBy\":false){\"tripPatterns\"{\"startTimeduration\" \"legs\"{\"line\"{\"name\"}}}}}";
+
+// Unexpected character ('t' (code 116)): was expecting double-quote to start field name
+//char graphqlQuery[] = "{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180 arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}";
+
+//No query found in body
 char graphqlQuery[] = "{}";
 
+//Can not construct instance of java.util.HashMap: no String-argument constructor/factory method to deserialize from String value ('{trip(from:{place:')
+//char graphqlQuery[] = "\"{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}\"";
+
+// char graphqlQuery[] = "\"{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}\"";
 
 
 GxIO_Class io(SPI, 15, 4, 5);
@@ -134,7 +153,7 @@ void loop() {
   client.println(sizeof(graphqlQuery));
   client.println();
   client.println(graphqlQuery);
-
+  client.println();
 
   // // Make a HTTP request (2)
   // client.println("GET " + url + " HTTP/1.1");
