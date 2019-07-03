@@ -23,11 +23,11 @@ const char* host = "api.entur.io";
 const int httpsPort = 443;
 
 
-// const char* wifiName = "Telenor7901rak";
-// const char* wifiPass = "ixmlvfkyfegyo";
+const char* wifiName = "Telenor7901rak";
+const char* wifiPass = "ixmlvfkyfegyo";
 
-const char* wifiName = "Skobbis2";
-const char* wifiPass = "r3plikant";
+// const char* wifiName = "Skobbis2";
+// const char* wifiPass = "r3plikant";
 
 
 char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
@@ -44,12 +44,17 @@ char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
 //char graphqlQuery[] = "{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180 arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}";
 
 //No query found in body
-char graphqlQuery[] = "{}";
+//const char* graphqlQuery = "{\"query\":\"{bikeRentalStationsByBbox(minimumLatitude:59.9\\nmaximumLatitude:60\\nminimumLongitude:10.7\\nmaximumLongitude:10.8\\n)\\n{id\\nname\\nbikesAvailable\\nspacesAvailable}}\",\"variables\":null}";
 
 //Can not construct instance of java.util.HashMap: no String-argument constructor/factory method to deserialize from String value ('{trip(from:{place:')
 //char graphqlQuery[] = "\"{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}\"";
 
 // char graphqlQuery[] = "\"{trip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinsen, Oslo\"}\nto:{place:\"NSR:StopPlace:58366\"name:\"Oslo, Oslo\"}numTripPatterns: 3\nminimumTransferTime: 180arriveBy:false){tripPatterns {\nstartTime\nduration\nlegs {line {name}}}}}\"";
+
+
+// Frode versjon (no newline, "query", double esc)
+const char* graphqlQuery = "{\"query\":\"{bikeRentalStationsByBbox(minimumLatitude:59.9\\nmaximumLatitude:60\\nminimumLongitude:10.7\\nmaximumLongitude:10.8\\n)\\n{id\\nname\\nbikesAvailable\\nspacesAvailable}}\",\"variables\":null}";
+
 
 
 GxIO_Class io(SPI, 15, 4, 5);
@@ -129,71 +134,124 @@ void loop() {
     String url = "/journey-planner/v2/graphql"
   
    */
-
+//sizeof(char) = 1
 
   String url = "/journey-planner/v2/graphql";
-  Serial.print("requesting URL: ");
-  Serial.println(url);
-  Serial.print("Content-Length: ");
-  Serial.println(sizeof(graphqlQuery));
-  Serial.println("Content:");
-  Serial.println(graphqlQuery);
+  String content = String("POST /journey-planner/v2/graphql HTTP/1.1\n");
+  content += "Host: api.entur.io\n";
+  content += "Cache-Control: no-cache\n";
+  content += "Content-Type: application/json\n";
+  content += "Content-Length: " + String(strlen(graphqlQuery)) + String("\n");
+  content += "\n";
+  content += graphqlQuery;
 
-  // Make a HTTP request (1)
-  // client.print(String("POST ") + url + " HTTP/1.1\r\n" +
-  //              "Host: " + host + "\r\n" +
-  //              "User-Agent: BuildFailureDetectorESP8266\r\n" +
-  //              "Connection: close\r\n\r\n");
+  Serial.println(String("Dette sendes: ") + content);
 
-  client.println("POST /journey-planner/v2/graphql HTTP/1.1");
-  client.println("Host: api.entur.io");
-  client.println("Cache-Control: no-cache");
-  client.println("Content-Type: application/json");
-  client.print("Content-Length: ");
-  client.println(sizeof(graphqlQuery));
-  client.println();
-  client.println(graphqlQuery);
-  client.println();
+  client.print(content);
 
-  // // Make a HTTP request (2)
-  // client.println("GET " + url + " HTTP/1.1");
-  // client.println("GET " + url + " HTTP/1.1");
-  // client.println("Host: " + " ");
-  // client.println("Connection: close\r\n\r\n");
+  // // Request
+  // client.println("POST /journey-planner/v2/graphql HTTP/1.1");
+  // client.println("Host: api.entur.io");
+  // client.println("Cache-Control: no-cache");
+  // client.println("Content-Type: application/json");
+  // client.print("Content-Length: ");
+  // client.println(strlen(graphqlQuery));
   // client.println();
+  // client.println(graphqlQuery);
+  // client.println();
+
+
+
+
+/*
+I am not sure if this is still relevant for you but I faced the same situation and I believe I found a solution. If it is not relevant to you, perhaps it will help some other, especially given that the default WiFiClientSecure library will soon be switched to BearSSL and no support is currently being given for the existing implementation.
+Although I did not manage to speed up readString function, I used the WiFiClientSecure::read(uint8_t *buf, size_t size) function to get the data from the server:
+
+ */
+/*
+  // Buffer size, 128 bytes in this case
+  #define RESP_BUFFER_LENGTH 128
+  // Pointer to actual buffer
+  uint8_t * _buffer = new uint8_t[RESP_BUFFER_LENGTH];
+  // String to hold the final response
+  String _responseString = "";
+  // If info is still available
+  while (client.available())
+  {
+      // Fill the buffer and make a note of the total read length 
+      int actualLength = client.readBytes(_buffer, RESP_BUFFER_LENGTH);
+      // If it fails for whatever reason
+      if(actualLength <= 0)
+      {
+
+      }
+      // Concatenate the buffer content to the final response string
+      // I used an arduino String for convenience
+      // but you can use strcat or whatever you see fit
+      _responseString += String((char*)_buffer).substring(0, actualLength);  
+      
+      Serial.print(_responseString);
+
+  }
+  // Clear buffer memory
+  delete[] _buffer;
+*/
+
+
+
+
+  // JsonObject& root = jsonBuffer.parseObject(response.substring(bodypos));
+
+  // String device_token = root[String("user_code")];
+
+  // return device_token;
+
+
+
+    // show("Entur API");
+    // display.update();
 
 
   Serial.println("request sent");
   while (client.connected()) {
-    String line = client.readStringUntil('\n');
-    if (line == "\r") {
-      Serial.println("headers received");
-      break;
-    }
+    String line = client.readString();
+    Serial.println(line);
+
+
+    Serial.println("reply was:");
+    Serial.println("==========");
+    Serial.println(line);
+    Serial.println("==========");
+    Serial.println("closing connection");
+
+
+    show(line);
+    display.update();
   }
-  String line = client.readStringUntil('\n');
-  if (line.startsWith("{\"state\":\"success\"")) {
-    Serial.println("esp8266/Arduino CI successfull!");
-  } else {
-    Serial.println("esp8266/Arduino CI has failed");
-    //show("esp8266/Arduino CI has failed");
-    //display.update();
-  }
-  
-  show(line);
-  display.update();
 
-  Serial.println("reply was:");
-  Serial.println("==========");
-  Serial.println(line);
-  Serial.println("==========");
-  Serial.println("closing connection");
+  // while (client.connected()) {
+  //   String line = client.readStringUntil('\n');
+  //   Serial.println(line);
+  //   // if (line == "\r") {
+  //   //   Serial.println("headers received");
+  //   //   break;
+  //   // }
+  // }
 
 
 
 
 
-  
+
   delay(15000);  //GET Data at every 5 seconds
 
+
+  // String line = client.readStringUntil('\n');
+  // if (line.startsWith("{\"state\":\"success\"")) {
+  //   Serial.println("esp8266/Arduino CI successfull!");
+  // } else {
+  //   Serial.println("esp8266/Arduino CI has failed");
+  //   //show("esp8266/Arduino CI has failed");
+  // }
+  
 }
