@@ -1,0 +1,610 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-07-04 19:35:12
+count workspace : /Users/gjermund/github_skobba/esp8266-epaper-wifi
+total files : 293
+total code lines : 8992
+total comment lines : 1762
+total blank lines : 2188
+
+.gitignore, code is 4, comment is 0, blank is 0.
+.pioenvs/.sconsign.dblite, it is a binary file.
+.pioenvs/do-not-modify-files-here.url, code is 2, comment is 1, blank is 1.
+.pioenvs/nodemcuv2/firmware.bin, it is a binary file.
+.pioenvs/nodemcuv2/firmware.elf, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/abi.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/base64.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cbuf.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cont.S.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cont_util.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_app_entry_noextra4k.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_eboot_command.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_flash_utils.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_i2s.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_main.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_noniso.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_phy.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_postmortem.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_si2c.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_sigma_delta.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_timer.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_waveform.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_analog.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_digital.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pulse.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pwm.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_shift.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/debug.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp-frag.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp-version.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/FS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/FunctionalInterrupt.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/gdb_hooks.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/HardwareSerial.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/heap.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/IPAddress.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libb64/cdecode.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libb64/cencode.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libc_replacements.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/MD5Builder.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Print.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Schedule.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/ScheduledFunctions.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/sntp-lwip2.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_cache.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_check.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_gc.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_hydrogen.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_nucleus.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs_api.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs_hal.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/sqrt32.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/StackThunk.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Stream.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/StreamString.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/time.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Tone.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/uart.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/umm_malloc/umm_malloc.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Updater.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/WMath.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/WString.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/ld/local.eagle.app.v6.common.ld, code is 245, comment is 16, blank is 0.
+.pioenvs/nodemcuv2/lib150/ESP8266HTTPClient/ESP8266HTTPClient.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib150/libESP8266HTTPClient.a, it is a binary file.
+.pioenvs/nodemcuv2/lib4eb/libSPI.a, it is a binary file.
+.pioenvs/nodemcuv2/lib4eb/SPI/SPI.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxEPD.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxFont_GFX.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDE0213B1/GxGDE0213B1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH0213B72/GxGDEH0213B72.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH029A1/GxGDEH029A1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEP015OC1/GxGDEP015OC1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z04/GxGDEW0154Z04.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z17/GxGDEW0154Z17.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213I5F/GxGDEW0213I5F.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213Z16/GxGDEW0213Z16.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027C44/GxGDEW027C44.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027W3/GxGDEW027W3.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029T5/GxGDEW029T5.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029Z10/GxGDEW029Z10.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042T2/GxGDEW042T2.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042Z15/GxGDEW042Z15.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0583T7/GxGDEW0583T7.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075T8/GxGDEW075T8.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075Z09/GxGDEW075Z09.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO_SPI/GxIO_SPI.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/libGxEPD_ID2951.a, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/BearSSLHelpers.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/CertStoreBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFi.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiAP.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiGeneric.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiMulti.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiScan.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA-WPS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClient.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureAxTLS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServer.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureAxTLS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiUdp.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/libESP8266WiFi.a, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_GFX.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_SPITFT.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/glcdfont.c.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/libAdafruit GFX Library_ID13.a, it is a binary file.
+.pioenvs/nodemcuv2/libdbb/libArduinoJson_ID64.a, code is 1, comment is 0, blank is 0.
+.pioenvs/nodemcuv2/libFrameworkArduino.a, it is a binary file.
+.pioenvs/nodemcuv2/libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pioenvs/nodemcuv2/spiffs.bin, it is a binary file.
+.pioenvs/nodemcuv2/src/main.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/test/output_export.cpp.o, it is a binary file.
+.pioenvs/structure.hash, code is 1, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.clang-format, code is 4, comment is 1, blank is 1.
+.piolibdeps/ArduinoJson_ID64/.gitattributes, code is 1, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.github/FUNDING.yml, code is 1, comment is 1, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.github/ISSUE_TEMPLATE.md, code is 12, comment is 2, blank is 2.
+.piolibdeps/ArduinoJson_ID64/.gitignore, code is 9, comment is 4, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.library.json, code is 48, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/.mbedignore, code is 6, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.travis.yml, code is 132, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/appveyor.yml, code is 20, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/ArduinoJson.h, code is 1, comment is 3, blank is 1.
+.piolibdeps/ArduinoJson_ID64/banner.svg, code is 366, comment is 1, blank is 1.
+.piolibdeps/ArduinoJson_ID64/CHANGELOG.md, code is 398, comment is 0, blank is 64.
+.piolibdeps/ArduinoJson_ID64/CMakeLists.txt, code is 17, comment is 0, blank is 5.
+.piolibdeps/ArduinoJson_ID64/CONTRIBUTING.md, code is 7, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/examples/JsonConfigFile/JsonConfigFile.ino, code is 64, comment is 64, blank is 24.
+.piolibdeps/ArduinoJson_ID64/examples/JsonGeneratorExample/JsonGeneratorExample.ino, code is 16, comment is 50, blank is 11.
+.piolibdeps/ArduinoJson_ID64/examples/JsonHttpClient/JsonHttpClient.ino, code is 56, comment is 45, blank is 15.
+.piolibdeps/ArduinoJson_ID64/examples/JsonParserExample/JsonParserExample.ino, code is 24, comment is 45, blank is 11.
+.piolibdeps/ArduinoJson_ID64/examples/JsonServer/JsonServer.ino, code is 45, comment is 45, blank is 20.
+.piolibdeps/ArduinoJson_ID64/examples/JsonUdpBeacon/JsonUdpBeacon.ino, code is 40, comment is 47, blank is 14.
+.piolibdeps/ArduinoJson_ID64/examples/MsgPackParser/MsgPackParser.ino, code is 26, comment is 39, blank is 10.
+.piolibdeps/ArduinoJson_ID64/examples/ProgmemExample/ProgmemExample.ino, code is 20, comment is 39, blank is 14.
+.piolibdeps/ArduinoJson_ID64/examples/StringExample/StringExample.ino, code is 21, comment is 42, blank is 14.
+.piolibdeps/ArduinoJson_ID64/keywords.txt, code is 33, comment is 0, blank is 3.
+.piolibdeps/ArduinoJson_ID64/library.json, code is 22, comment is 0, blank is 1.
+.piolibdeps/ArduinoJson_ID64/library.properties, code is 11, comment is 2, blank is 0.
+.piolibdeps/ArduinoJson_ID64/LICENSE.md, code is 6, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/README.md, code is 80, comment is 39, blank is 30.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.h, code is 7, comment is 3, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.hpp, code is 56, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayFunctions.hpp, code is 19, comment is 4, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayImpl.hpp, code is 13, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayIterator.hpp, code is 91, comment is 4, blank is 27.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayRef.hpp, code is 110, comment is 12, blank is 34.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayShortcuts.hpp, code is 26, comment is 14, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ElementProxy.hpp, code is 113, comment is 25, blank is 28.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/Utilities.hpp, code is 47, comment is 10, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionData.hpp, code is 41, comment is 9, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionImpl.hpp, code is 136, comment is 4, blank is 24.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/compatibility.hpp, code is 11, comment is 5, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Configuration.hpp, code is 113, comment is 30, blank is 34.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/ArduinoStreamReader.hpp, code is 18, comment is 5, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/CharPointerReader.hpp, code is 50, comment is 4, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/DeserializationError.hpp, code is 90, comment is 9, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/deserialize.hpp, code is 55, comment is 17, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/FlashStringReader.hpp, code is 34, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/IteratorReader.hpp, code is 22, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/NestingLimit.hpp, code is 9, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/StdStreamReader.hpp, code is 21, comment is 5, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/BasicJsonDocument.hpp, code is 67, comment is 5, blank is 18.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/DynamicJsonDocument.hpp, code is 14, comment is 5, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/JsonDocument.hpp, code is 203, comment is 53, blank is 52.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/StaticJsonDocument.hpp, code is 35, comment is 5, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/EscapeSequence.hpp, code is 25, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonDeserializer.hpp, code is 317, comment is 42, blank is 71.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonSerializer.hpp, code is 89, comment is 4, blank is 32.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/PrettyJsonSerializer.hpp, code is 63, comment is 4, blank is 17.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/TextFormatter.hpp, code is 117, comment is 12, blank is 29.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/Utf8.hpp, code is 19, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/Alignment.hpp, code is 18, comment is 5, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/MemoryPool.hpp, code is 86, comment is 13, blank is 22.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringBuilder.hpp, code is 35, comment is 4, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringSlot.hpp, code is 10, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/SerializedValue.hpp, code is 49, comment is 6, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/Visitable.hpp, code is 10, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/endianess.hpp, code is 29, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/ieee754.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackDeserializer.hpp, code is 276, comment is 9, blank is 64.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackSerializer.hpp, code is 158, comment is 5, blank is 25.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Namespace.hpp, code is 20, comment is 3, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/convertNumber.hpp, code is 86, comment is 4, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Float.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatParts.hpp, code is 64, comment is 8, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatTraits.hpp, code is 144, comment is 29, blank is 26.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Integer.hpp, code is 12, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseFloat.hpp, code is 10, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseInteger.hpp, code is 12, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseNumber.hpp, code is 124, comment is 7, blank is 26.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/MemberProxy.hpp, code is 131, comment is 26, blank is 33.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectFunctions.hpp, code is 35, comment is 6, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectImpl.hpp, code is 40, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectIterator.hpp, code is 91, comment is 4, blank is 29.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectRef.hpp, code is 159, comment is 38, blank is 44.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectShortcuts.hpp, code is 39, comment is 24, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/Pair.hpp, code is 41, comment is 5, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantCasts.hpp, code is 16, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantComparisons.hpp, code is 197, comment is 16, blank is 32.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOperators.hpp, code is 12, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOr.hpp, code is 25, comment is 7, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantShortcuts.hpp, code is 16, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/alias_cast.hpp, code is 20, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/assert.hpp, code is 7, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/attributes.hpp, code is 32, comment is 7, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/ctype.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/gsl/not_null.hpp, code is 22, comment is 4, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/limits.hpp, code is 32, comment is 5, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/math.hpp, code is 15, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/mpl/max.hpp, code is 14, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/safe_strcmp.hpp, code is 15, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits.hpp, code is 15, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/conditional.hpp, code is 11, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp, code is 9, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp, code is 9, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_array.hpp, code is 10, comment is 5, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp, code is 14, comment is 7, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_const.hpp, code is 8, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp, code is 10, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp, code is 24, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_same.hpp, code is 8, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp, code is 28, comment is 4, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp, code is 24, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp, code is 36, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp, code is 11, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp, code is 11, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp, code is 8, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/utility.hpp, code is 9, comment is 4, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DummyWriter.hpp, code is 12, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DynamicStringWriter.hpp, code is 56, comment is 7, blank is 17.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/measure.hpp, code is 11, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/serialize.hpp, code is 45, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StaticStringWriter.hpp, code is 27, comment is 5, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StreamWriter.hpp, code is 23, comment is 6, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ArduinoStringAdapter.hpp, code is 44, comment is 6, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ConstRamStringAdapter.hpp, code is 38, comment is 6, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/FlashStringAdapter.hpp, code is 43, comment is 5, blank is 13.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/RamStringAdapter.hpp, code is 33, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedFlashStringAdapter.hpp, code is 39, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedRamStringAdapter.hpp, code is 36, comment is 5, blank is 13.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StlStringAdapter.hpp, code is 41, comment is 4, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/String.hpp, code is 43, comment is 8, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StringAdapters.hpp, code is 24, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringCopier.hpp, code is 15, comment is 4, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringMover.hpp, code is 26, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringStorage.hpp, code is 30, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/SlotFunctions.hpp, code is 30, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAs.hpp, code is 68, comment is 9, blank is 20.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAsImpl.hpp, code is 30, comment is 4, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantContent.hpp, code is 37, comment is 6, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantData.hpp, code is 284, comment is 10, blank is 71.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantFunctions.hpp, code is 130, comment is 4, blank is 33.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantImpl.hpp, code is 125, comment is 6, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantRef.hpp, code is 228, comment is 111, blank is 47.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantSlot.hpp, code is 64, comment is 13, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantTo.hpp, code is 20, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/version.hpp, code is 5, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/SUPPORT.md, code is 3, comment is 0, blank is 2.
+.travis.yml, code is 61, comment is 4, blank is 6.
+EXAMPLE.cpp, code is 442, comment is 101, blank is 65.
+IMG_0001.h, code is 100, comment is 1, blank is 2.
+include/README, code is 13, comment is 1, blank is 8.
+JSON/sinsen.1.json, code is 26, comment is 0, blank is 1.
+JSON/sinsen.json, code is 26, comment is 0, blank is 1.
+lib/README, code is 37, comment is 2, blank is 9.
+platformio.ini, code is 8, comment is 9, blank is 1.
+README.md, code is 20, comment is 5, blank is 7.
+README/README-curl.1.md, code is 2, comment is 0, blank is 10.
+README/README-curl.2.md, code is 14, comment is 2, blank is 10.
+README/README-curl.md, code is 15, comment is 0, blank is 12.
+README/README-graphql-esc.txt, code is 2, comment is 1, blank is 1.
+README/README-graphql-frode.md, code is 7, comment is 0, blank is 4.
+README/README-graphql-sample.md, code is 54, comment is 0, blank is 2.
+README/README-graphql-short.md, code is 10, comment is 3, blank is 8.
+README/README-graphql-sinsen-jernbanetorget-escaped.md, code is 27, comment is 1, blank is 4.
+README/README-graphql-sinsen-jernbanetorget.md, code is 26, comment is 0, blank is 1.
+README/README-graphql-sinsen.md, code is 8, comment is 0, blank is 7.
+README/README-libs.md, code is 0, comment is 0, blank is 0.
+README/README-ruter.md, code is 78, comment is 23, blank is 32.
+README/README-ssl.md, code is 2, comment is 1, blank is 0.
+README/srt-esc.txt, code is 1, comment is 0, blank is 0.
+src/main.cpp, code is 82, comment is 111, blank is 76.
+src/myspace.code-workspace, code is 17, comment is 0, blank is 0.
+test/main_REST.cpp, code is 103, comment is 28, blank is 53.
+test/README, code is 8, comment is 1, blank is 3.
+TEST1.md, code is 48, comment is 2, blank is 6.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-07-04 19:50:56
+count workspace : /Users/gjermund/github_skobba/esp8266-epaper-wifi
+total files : 293
+total code lines : 8992
+total comment lines : 1762
+total blank lines : 2188
+
+.gitignore, code is 4, comment is 0, blank is 0.
+.pioenvs/.sconsign.dblite, it is a binary file.
+.pioenvs/do-not-modify-files-here.url, code is 2, comment is 1, blank is 1.
+.pioenvs/nodemcuv2/firmware.bin, it is a binary file.
+.pioenvs/nodemcuv2/firmware.elf, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/abi.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/base64.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cbuf.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cont.S.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/cont_util.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_app_entry_noextra4k.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_eboot_command.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_flash_utils.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_i2s.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_main.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_noniso.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_phy.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_postmortem.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_si2c.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_sigma_delta.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_timer.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_waveform.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_analog.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_digital.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pulse.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pwm.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_shift.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/debug.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp-frag.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp-version.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Esp.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/FS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/FunctionalInterrupt.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/gdb_hooks.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/HardwareSerial.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/heap.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/IPAddress.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libb64/cdecode.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libb64/cencode.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/libc_replacements.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/MD5Builder.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Print.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Schedule.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/ScheduledFunctions.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/sntp-lwip2.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_cache.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_check.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_gc.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_hydrogen.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_nucleus.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs_api.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/spiffs_hal.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/sqrt32.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/StackThunk.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Stream.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/StreamString.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/time.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Tone.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/uart.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/umm_malloc/umm_malloc.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/Updater.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/WMath.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/FrameworkArduino/WString.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/ld/local.eagle.app.v6.common.ld, code is 245, comment is 16, blank is 0.
+.pioenvs/nodemcuv2/lib150/ESP8266HTTPClient/ESP8266HTTPClient.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib150/libESP8266HTTPClient.a, it is a binary file.
+.pioenvs/nodemcuv2/lib4eb/libSPI.a, it is a binary file.
+.pioenvs/nodemcuv2/lib4eb/SPI/SPI.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxEPD.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxFont_GFX.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDE0213B1/GxGDE0213B1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH0213B72/GxGDEH0213B72.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH029A1/GxGDEH029A1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEP015OC1/GxGDEP015OC1.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z04/GxGDEW0154Z04.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z17/GxGDEW0154Z17.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213I5F/GxGDEW0213I5F.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213Z16/GxGDEW0213Z16.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027C44/GxGDEW027C44.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027W3/GxGDEW027W3.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029T5/GxGDEW029T5.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029Z10/GxGDEW029Z10.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042T2/GxGDEW042T2.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042Z15/GxGDEW042Z15.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0583T7/GxGDEW0583T7.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075T8/GxGDEW075T8.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075Z09/GxGDEW075Z09.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO_SPI/GxIO_SPI.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib547/libGxEPD_ID2951.a, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/BearSSLHelpers.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/CertStoreBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFi.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiAP.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiGeneric.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiMulti.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiScan.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA-WPS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClient.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureAxTLS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServer.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureAxTLS.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureBearSSL.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiUdp.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/lib6bc/libESP8266WiFi.a, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_GFX.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_SPITFT.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/glcdfont.c.o, it is a binary file.
+.pioenvs/nodemcuv2/libb4c/libAdafruit GFX Library_ID13.a, it is a binary file.
+.pioenvs/nodemcuv2/libdbb/libArduinoJson_ID64.a, code is 1, comment is 0, blank is 0.
+.pioenvs/nodemcuv2/libFrameworkArduino.a, it is a binary file.
+.pioenvs/nodemcuv2/libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pioenvs/nodemcuv2/spiffs.bin, it is a binary file.
+.pioenvs/nodemcuv2/src/main.cpp.o, it is a binary file.
+.pioenvs/nodemcuv2/test/output_export.cpp.o, it is a binary file.
+.pioenvs/structure.hash, code is 1, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.clang-format, code is 4, comment is 1, blank is 1.
+.piolibdeps/ArduinoJson_ID64/.gitattributes, code is 1, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.github/FUNDING.yml, code is 1, comment is 1, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.github/ISSUE_TEMPLATE.md, code is 12, comment is 2, blank is 2.
+.piolibdeps/ArduinoJson_ID64/.gitignore, code is 9, comment is 4, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.library.json, code is 48, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/.mbedignore, code is 6, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/.travis.yml, code is 132, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/appveyor.yml, code is 20, comment is 0, blank is 0.
+.piolibdeps/ArduinoJson_ID64/ArduinoJson.h, code is 1, comment is 3, blank is 1.
+.piolibdeps/ArduinoJson_ID64/banner.svg, code is 366, comment is 1, blank is 1.
+.piolibdeps/ArduinoJson_ID64/CHANGELOG.md, code is 398, comment is 0, blank is 64.
+.piolibdeps/ArduinoJson_ID64/CMakeLists.txt, code is 17, comment is 0, blank is 5.
+.piolibdeps/ArduinoJson_ID64/CONTRIBUTING.md, code is 7, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/examples/JsonConfigFile/JsonConfigFile.ino, code is 64, comment is 64, blank is 24.
+.piolibdeps/ArduinoJson_ID64/examples/JsonGeneratorExample/JsonGeneratorExample.ino, code is 16, comment is 50, blank is 11.
+.piolibdeps/ArduinoJson_ID64/examples/JsonHttpClient/JsonHttpClient.ino, code is 56, comment is 45, blank is 15.
+.piolibdeps/ArduinoJson_ID64/examples/JsonParserExample/JsonParserExample.ino, code is 24, comment is 45, blank is 11.
+.piolibdeps/ArduinoJson_ID64/examples/JsonServer/JsonServer.ino, code is 45, comment is 45, blank is 20.
+.piolibdeps/ArduinoJson_ID64/examples/JsonUdpBeacon/JsonUdpBeacon.ino, code is 40, comment is 47, blank is 14.
+.piolibdeps/ArduinoJson_ID64/examples/MsgPackParser/MsgPackParser.ino, code is 26, comment is 39, blank is 10.
+.piolibdeps/ArduinoJson_ID64/examples/ProgmemExample/ProgmemExample.ino, code is 20, comment is 39, blank is 14.
+.piolibdeps/ArduinoJson_ID64/examples/StringExample/StringExample.ino, code is 21, comment is 42, blank is 14.
+.piolibdeps/ArduinoJson_ID64/keywords.txt, code is 33, comment is 0, blank is 3.
+.piolibdeps/ArduinoJson_ID64/library.json, code is 22, comment is 0, blank is 1.
+.piolibdeps/ArduinoJson_ID64/library.properties, code is 11, comment is 2, blank is 0.
+.piolibdeps/ArduinoJson_ID64/LICENSE.md, code is 6, comment is 0, blank is 4.
+.piolibdeps/ArduinoJson_ID64/README.md, code is 80, comment is 39, blank is 30.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.h, code is 7, comment is 3, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.hpp, code is 56, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayFunctions.hpp, code is 19, comment is 4, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayImpl.hpp, code is 13, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayIterator.hpp, code is 91, comment is 4, blank is 27.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayRef.hpp, code is 110, comment is 12, blank is 34.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayShortcuts.hpp, code is 26, comment is 14, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ElementProxy.hpp, code is 113, comment is 25, blank is 28.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/Utilities.hpp, code is 47, comment is 10, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionData.hpp, code is 41, comment is 9, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionImpl.hpp, code is 136, comment is 4, blank is 24.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/compatibility.hpp, code is 11, comment is 5, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Configuration.hpp, code is 113, comment is 30, blank is 34.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/ArduinoStreamReader.hpp, code is 18, comment is 5, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/CharPointerReader.hpp, code is 50, comment is 4, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/DeserializationError.hpp, code is 90, comment is 9, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/deserialize.hpp, code is 55, comment is 17, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/FlashStringReader.hpp, code is 34, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/IteratorReader.hpp, code is 22, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/NestingLimit.hpp, code is 9, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/StdStreamReader.hpp, code is 21, comment is 5, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/BasicJsonDocument.hpp, code is 67, comment is 5, blank is 18.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/DynamicJsonDocument.hpp, code is 14, comment is 5, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/JsonDocument.hpp, code is 203, comment is 53, blank is 52.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/StaticJsonDocument.hpp, code is 35, comment is 5, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/EscapeSequence.hpp, code is 25, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonDeserializer.hpp, code is 317, comment is 42, blank is 71.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonSerializer.hpp, code is 89, comment is 4, blank is 32.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/PrettyJsonSerializer.hpp, code is 63, comment is 4, blank is 17.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/TextFormatter.hpp, code is 117, comment is 12, blank is 29.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/Utf8.hpp, code is 19, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/Alignment.hpp, code is 18, comment is 5, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/MemoryPool.hpp, code is 86, comment is 13, blank is 22.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringBuilder.hpp, code is 35, comment is 4, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringSlot.hpp, code is 10, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/SerializedValue.hpp, code is 49, comment is 6, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/Visitable.hpp, code is 10, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/endianess.hpp, code is 29, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/ieee754.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackDeserializer.hpp, code is 276, comment is 9, blank is 64.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackSerializer.hpp, code is 158, comment is 5, blank is 25.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Namespace.hpp, code is 20, comment is 3, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/convertNumber.hpp, code is 86, comment is 4, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Float.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatParts.hpp, code is 64, comment is 8, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatTraits.hpp, code is 144, comment is 29, blank is 26.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Integer.hpp, code is 12, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseFloat.hpp, code is 10, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseInteger.hpp, code is 12, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseNumber.hpp, code is 124, comment is 7, blank is 26.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/MemberProxy.hpp, code is 131, comment is 26, blank is 33.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectFunctions.hpp, code is 35, comment is 6, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectImpl.hpp, code is 40, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectIterator.hpp, code is 91, comment is 4, blank is 29.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectRef.hpp, code is 159, comment is 38, blank is 44.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectShortcuts.hpp, code is 39, comment is 24, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/Pair.hpp, code is 41, comment is 5, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantCasts.hpp, code is 16, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantComparisons.hpp, code is 197, comment is 16, blank is 32.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOperators.hpp, code is 12, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOr.hpp, code is 25, comment is 7, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantShortcuts.hpp, code is 16, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/alias_cast.hpp, code is 20, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/assert.hpp, code is 7, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/attributes.hpp, code is 32, comment is 7, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/ctype.hpp, code is 9, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/gsl/not_null.hpp, code is 22, comment is 4, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/limits.hpp, code is 32, comment is 5, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/math.hpp, code is 15, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/mpl/max.hpp, code is 14, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/safe_strcmp.hpp, code is 15, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits.hpp, code is 15, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/conditional.hpp, code is 11, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp, code is 9, comment is 5, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp, code is 9, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_array.hpp, code is 10, comment is 5, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp, code is 14, comment is 7, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_const.hpp, code is 8, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp, code is 10, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp, code is 24, comment is 6, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_same.hpp, code is 8, comment is 5, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp, code is 28, comment is 4, blank is 12.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp, code is 24, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp, code is 36, comment is 4, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp, code is 11, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp, code is 11, comment is 5, blank is 3.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp, code is 8, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/utility.hpp, code is 9, comment is 4, blank is 2.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DummyWriter.hpp, code is 12, comment is 4, blank is 4.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DynamicStringWriter.hpp, code is 56, comment is 7, blank is 17.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/measure.hpp, code is 11, comment is 4, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/serialize.hpp, code is 45, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StaticStringWriter.hpp, code is 27, comment is 5, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StreamWriter.hpp, code is 23, comment is 6, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ArduinoStringAdapter.hpp, code is 44, comment is 6, blank is 16.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ConstRamStringAdapter.hpp, code is 38, comment is 6, blank is 14.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/FlashStringAdapter.hpp, code is 43, comment is 5, blank is 13.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/RamStringAdapter.hpp, code is 33, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedFlashStringAdapter.hpp, code is 39, comment is 4, blank is 11.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedRamStringAdapter.hpp, code is 36, comment is 5, blank is 13.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StlStringAdapter.hpp, code is 41, comment is 4, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/String.hpp, code is 43, comment is 8, blank is 15.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StringAdapters.hpp, code is 24, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringCopier.hpp, code is 15, comment is 4, blank is 7.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringMover.hpp, code is 26, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringStorage.hpp, code is 30, comment is 4, blank is 9.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/SlotFunctions.hpp, code is 30, comment is 4, blank is 6.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAs.hpp, code is 68, comment is 9, blank is 20.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAsImpl.hpp, code is 30, comment is 4, blank is 8.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantContent.hpp, code is 37, comment is 6, blank is 10.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantData.hpp, code is 284, comment is 10, blank is 71.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantFunctions.hpp, code is 130, comment is 4, blank is 33.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantImpl.hpp, code is 125, comment is 6, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantRef.hpp, code is 228, comment is 111, blank is 47.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantSlot.hpp, code is 64, comment is 13, blank is 21.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantTo.hpp, code is 20, comment is 6, blank is 5.
+.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/version.hpp, code is 5, comment is 3, blank is 2.
+.piolibdeps/ArduinoJson_ID64/SUPPORT.md, code is 3, comment is 0, blank is 2.
+.travis.yml, code is 61, comment is 4, blank is 6.
+EXAMPLE.cpp, code is 442, comment is 101, blank is 65.
+IMG_0001.h, code is 100, comment is 1, blank is 2.
+include/README, code is 13, comment is 1, blank is 8.
+JSON/sinsen.1.json, code is 26, comment is 0, blank is 1.
+JSON/sinsen.json, code is 26, comment is 0, blank is 1.
+lib/README, code is 37, comment is 2, blank is 9.
+platformio.ini, code is 8, comment is 9, blank is 1.
+README.md, code is 20, comment is 5, blank is 7.
+README/README-curl.1.md, code is 2, comment is 0, blank is 10.
+README/README-curl.2.md, code is 14, comment is 2, blank is 10.
+README/README-curl.md, code is 15, comment is 0, blank is 12.
+README/README-graphql-esc.txt, code is 2, comment is 1, blank is 1.
+README/README-graphql-frode.md, code is 7, comment is 0, blank is 4.
+README/README-graphql-sample.md, code is 54, comment is 0, blank is 2.
+README/README-graphql-short.md, code is 10, comment is 3, blank is 8.
+README/README-graphql-sinsen-jernbanetorget-escaped.md, code is 27, comment is 1, blank is 4.
+README/README-graphql-sinsen-jernbanetorget.md, code is 26, comment is 0, blank is 1.
+README/README-graphql-sinsen.md, code is 8, comment is 0, blank is 7.
+README/README-libs.md, code is 0, comment is 0, blank is 0.
+README/README-ruter.md, code is 78, comment is 23, blank is 32.
+README/README-ssl.md, code is 2, comment is 1, blank is 0.
+README/srt-esc.txt, code is 1, comment is 0, blank is 0.
+src/main.cpp, code is 82, comment is 111, blank is 76.
+src/myspace.code-workspace, code is 17, comment is 0, blank is 0.
+test/main_REST.cpp, code is 103, comment is 28, blank is 53.
+test/README, code is 8, comment is 1, blank is 3.
+TEST1.md, code is 48, comment is 2, blank is 6.
+===============================================================================

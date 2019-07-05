@@ -18,6 +18,9 @@ https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/HT
 # Platformio
 brew install platformio
 
+# Set ssis and pwd via web
+https://www.hackster.io/hieromon-ikasamo/esp8266-esp32-connect-wifi-made-easy-d75f45
+
 ## cli
 pip install -U platformio
 
