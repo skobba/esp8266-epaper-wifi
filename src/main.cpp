@@ -34,6 +34,8 @@ const int httpsPort = 443;
 const char* wifiName = "Telenor7901rak";
 const char* wifiPass = "ixmlvfkyfegyo";
 
+
+
 // const char* wifiName = "ssid";
 // const char* wifiPass = "paw";
 
@@ -87,7 +89,7 @@ Unexpected character ('G' (code 71)): was expecting comma to separate Object ent
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
 
 //FromSinsen-Tiny
-char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(startTime:\\\"2019-07-13T09:00:00+0200\\\"numberOfDepartures:20){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
+char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(startTime:\\\"2019-07-13T09:00:00+0200\\\"numberOfDepartures:2){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
 
 
 
@@ -164,6 +166,7 @@ void loop() {
 
   // Use WiFiClientSecure class to create TLS connection
   WiFiClientSecure client;
+
   Serial.print("connecting to ");
   Serial.println(host);
 
@@ -187,14 +190,115 @@ void loop() {
   //Serial.println(String("Dette sendes: ") + content);
   client.print(content);
 
-  Serial.println("Connecting to Entur...");
 
-  String header = client.readStringUntil('\r');
-  String alt = client.readString();
-  Serial.println("************************** HEADER **************************");
-  Serial.println(header);
-  Serial.println("*************************** BODY ***************************");
-  Serial.println(alt);
+  Serial.println("request sent");
+  while (client.connected()) {
+    String line = client.readStringUntil('\n');
+    if (line == "\r") {
+      Serial.println("headers received");
+      break;
+    }
+  }
+
+  String chunk = "";
+  int limit = 1;
+  String response="";
+
+Serial.println(response);
+ // String line = client.readStringUntil('z');
+    do {
+    if (client.connected()) {
+      client.setTimeout(2000);
+      chunk = client.readStringUntil('\n');
+      response += chunk;
+      Serial.println(chunk);
+    }
+  } while (chunk.length() > 0 && ++limit < 100);
+
+
+  // Reading JSON
+  const size_t capacity = JSON_ARRAY_SIZE(2) + JSON_OBJECT_SIZE(3) + 30;
+  DynamicJsonDocument doc(capacity);
+
+  //const char* json = "{\"sensor\":\"gps\",\"time\":1351824120,\"data\":[48.75608,2.302038]}";
+/*
+#### RAW ####
+  "data": {
+    "stopPlace": {
+      "id": "NSR:StopPlace:6035",
+      "name": "Sinsen",
+
+
+{"data":{"stopPlace":{"id":"NSR:StopPlace:6035","name":"Sinsen","estimatedCalls":[{"expectedDepartureTime":"2019-07-13T09:02:00+0200","destinationDisplay":{"frontText":"Vestli"},"quay":{"id":"NSR:Quay:11078"}},{"expectedDepartureTime":"2019-07-13T09:09:00+0200","destinationDisplay":{"frontText":"Bergkrystallen via Storo"},"quay":{"id":"NSR:Quay:11077"}}]}}}
+
+#### ECSAPED ####
+{\"data\":{\"stopPlace\":{\"id\":\"NSR:StopPlace:6035\",\"name\":\"Sinsen\",\"estimatedCalls\":[{\"expectedDepartureTime\":\"2019-07-13T09:02:00+0200\",\"destinationDisplay\":{\"frontText\":\"Vestli\"},\"quay\":{\"id\":\"NSR:Quay:11078\"}},{\"expectedDepartureTime\":\"2019-07-13T09:09:00+0200\",\"destinationDisplay\":{\"frontText\":\"Bergkrystallen via Storo\"},\"quay\":{\"id\":\"NSR:Quay:11077\"}}]}}}
+
+*/
+  const char* jsonFromEntur = "{\"data\":{\"stopPlace\":{\"id\":\"NSR:StopPlace:6035\",\"name\":\"Sinsen\",\"estimatedCalls\":[{\"expectedDepartureTime\":\"2019-07-13T09:02:00+0200\",\"destinationDisplay\":{\"frontText\":\"Vestli\"},\"quay\":{\"id\":\"NSR:Quay:11078\"}},{\"expectedDepartureTime\":\"2019-07-13T09:09:00+0200\",\"destinationDisplay\":{\"frontText\":\"Bergkrystallen via Storo\"},\"quay\":{\"id\":\"NSR:Quay:11077\"}}]}}}";
+
+  Serial.print("*** Reuslt: "); 
+  Serial.print(response);
+
+  deserializeJson(doc, response);
+
+  const char* nameAvgang01 = doc["data"]["stopPlace"]["id"];
+  // long time = doc["time"]; // 1351824120
+
+
+  // float data_0 = doc["data"][0]; // 48.75608
+  // float data_1 = doc["data"][1]; // 2.302038
+
+
+  //  DynamicJsonBuffer jsonBuffer(10833);
+  // JsonObject& root = jsonBuffer.parseObject(response);
+  //  Serial.print("JsonObject: ");
+  //  JsonObject&  thermoStat = root["data"]["stopPlace"];
+  // const char* stopName = thermoStat["name"]; // "heating"
+
+  //const char* avganger = doc["data"]; // "gps"
+
+  Serial.println("reply was:");
+  Serial.println("==========");
+  Serial.println(nameAvgang01);
+  Serial.println("==========");
+
+  
+
+  //////////////////////////////// TEST ////////////////////////////////
+  //  Serial.println("Receiving response");
+
+  // while (client.connected()) {
+  //   /*
+  //   String line = client.readStringUntil('\n');
+  //   Serial.println(line);
+  //   if (line == "\r") {
+  //     Serial.println("headers received");
+  //     break;
+  //   }
+  //   */
+  //   Serial.write(client.read());
+  //   delay(5);
+  // }
+
+  // Serial.println("2");
+  // String line = client.readStringUntil('\n');
+  // Serial.println(line);
+  // Serial.println("closing connection");
+  //show(graphqlQuery);
+  //display.update();
+  
+
+  //////////////////////////////// TEST - END ////////////////////////////
+
+  // Serial.println("Connecting to Entur...");
+
+  // String header = client.readStringUntil('\r');
+  // String alt = client.readString();
+  // Serial.println("************************** HEADER **************************");
+  // Serial.println(header);
+  // Serial.println("*************************** BODY ***************************");
+  //Serial.println(alt);
   // if (line == "\r") {
   //   Serial.println("headers received");
   // }
@@ -206,8 +310,8 @@ void loop() {
 
 
 
-    show(graphqlQuery);
-    display.update();
+    //show(graphqlQuery);
+    //display.update();
 
     
   //}
