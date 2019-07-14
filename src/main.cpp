@@ -83,8 +83,12 @@ Unexpected character ('G' (code 71)): was expecting comma to separate Object ent
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
 
 //Frode 3
-char graphqlQuery[] = "{\"query\":\"{\\ntrip(from:{place:\\\"NSR:StopPlace:6035\\\"name:\\\"Sinsen,Oslo\\\"}to:{place:\\\"NSR:StopPlace:58366\\\"name:\\\"Oslo,Oslo\\\"}numTripPatterns:3\\nminimumTransferTime:180\\narriveBy:false\\n)\\n\\n{\\ntripPatterns{\\nstartTime\\nduration\\nlegs{\\nline{\\nname\\n}\\n}\\n}\\n}\\n}\\n\",\"variables\":null}"; 
+//char graphqlQuery[] = "{\"query\":\"{\\ntrip(from:{place:\\\"NSR:StopPlace:6035\\\"name:\\\"Sinsen,Oslo\\\"}to:{place:\\\"NSR:StopPlace:58366\\\"name:\\\"Oslo,Oslo\\\"}numTripPatterns:3\\nminimumTransferTime:180\\narriveBy:false\\n)\\n\\n{\\ntripPatterns{\\nstartTime\\nduration\\nlegs{\\nline{\\nname\\n}\\n}\\n}\\n}\\n}\\n\",\"variables\":null}"; 
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
+
+//FromSinsen-Tiny
+char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(startTime:\\\"2019-07-13T09:00:00+0200\\\"numberOfDepartures:20){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
+
 
 
 /*
@@ -202,8 +206,8 @@ void loop() {
 
 
 
-    //show(line);
-    //display.update();
+    show(graphqlQuery);
+    display.update();
 
     
   //}
