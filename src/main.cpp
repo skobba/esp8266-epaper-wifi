@@ -18,14 +18,24 @@
 
 // *.entur.io - use web browser to view and copy
 // SHA1 fingerprint of the certificate
+/*
+Expires: Wednesday, 11 March 2020 at 13:00:00 Central European Standard Time
+C1 E1 33 B9 35 53 CF C3 22 B4 21 9C 6D 97 59 43 1B 78 C4 08
+
+!!!!!!!!!!!!!!!!!! 
+USE INLINE CERT - https://www.youtube.com/watch?v=Wm1xKj4bKsY
+
+
+ */
 const char fingerprint[] PROGMEM = "C1 E1 33 B9 35 53 CF C3 22 B4 21 9C 6D 97 59 43 1B 78 C4 08";
 const char* host = "api.entur.io";
 const int httpsPort = 443;
 
+const char* wifiName = "Telenor7901rak";
+const char* wifiPass = "ixmlvfkyfegyo";
 
-
-const char* wifiName = "ssid";
-const char* wifiPass = "paw";
+// const char* wifiName = "ssid";
+// const char* wifiPass = "paw";
 
 
 // char input[] = "{\"name\":\"ArduinoJson\",\"stargazers\":{";
@@ -73,11 +83,23 @@ Unexpected character ('G' (code 71)): was expecting comma to separate Object ent
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
 
 //Frode 3
-char graphqlQuery[] = "{\"query\":\"{\\ntrip(from:{place:\\\"NSR:StopPlace:6035\\\"name:\\\"Sinsen,Oslo\\\"}to:{place:\\\"NSR:StopPlace:58366\\\"name:\\\"Oslo,Oslo\\\"}numTripPatterns:3\\nminimumTransferTime:180\\narriveBy:false\\n)\\n\\n{\\ntripPatterns{\\nstartTime\\nduration\\nlegs{\\nline{\\nname\\n}\\n}\\n}\\n}\\n}\\n\",\"variables\":null}";
+char graphqlQuery[] = "{\"query\":\"{\\ntrip(from:{place:\\\"NSR:StopPlace:6035\\\"name:\\\"Sinsen,Oslo\\\"}to:{place:\\\"NSR:StopPlace:58366\\\"name:\\\"Oslo,Oslo\\\"}numTripPatterns:3\\nminimumTransferTime:180\\narriveBy:false\\n)\\n\\n{\\ntripPatterns{\\nstartTime\\nduration\\nlegs{\\nline{\\nname\\n}\\n}\\n}\\n}\\n}\\n\",\"variables\":null}"; 
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
 
 
+/*
+HVORFOR ER DET KUN 5 LINJER MED DENNE SPØRRINGEN!?!?!?!?!!??!
 
+{
+	lines(
+    transportModes:metro
+  ) {
+    name
+  }
+}
+
+
+ */
 
 GxIO_Class io(SPI, 15, 4, 5);
 GxEPD_Class display(io,  5,  16);
@@ -136,7 +158,6 @@ void loop() {
   // display.update();
   // delay(5000);
 
-
   // Use WiFiClientSecure class to create TLS connection
   WiFiClientSecure client;
   Serial.print("connecting to ");
@@ -150,14 +171,6 @@ void loop() {
     return;
   }
 
-    /*
-    String url = "/Place/GetPlaces/grefsen";
-    String url = "/line/GetLinesByStopID/3012120";
-    String url = "/journey-planner/v2/graphql"
-  
-   */
-//sizeof(char) = 1
-
   String url = "/journey-planner/v2/graphql";
   String content = String("POST /journey-planner/v2/graphql HTTP/1.1\n");
   content += "Host: api.entur.io\n";
@@ -167,113 +180,35 @@ void loop() {
   content += "\n";
   content += graphqlQuery;
 
-  Serial.println(String("Dette sendes: ") + content);
-
+  //Serial.println(String("Dette sendes: ") + content);
   client.print(content);
 
-  // // Request
-  // client.println("POST /journey-planner/v2/graphql HTTP/1.1");
-  // client.println("Host: api.entur.io");
-  // client.println("Cache-Control: no-cache");
-  // client.println("Content-Type: application/json");
-  // client.print("Content-Length: ");
-  // client.println(strlen(graphqlQuery));
-  // client.println();
-  // client.println(graphqlQuery);
-  // client.println();
+  Serial.println("Connecting to Entur...");
 
+  String header = client.readStringUntil('\r');
+  String alt = client.readString();
+  Serial.println("************************** HEADER **************************");
+  Serial.println(header);
+  Serial.println("*************************** BODY ***************************");
+  Serial.println(alt);
+  // if (line == "\r") {
+  //   Serial.println("headers received");
+  // }
+  // Serial.println();
 
-
-
-/*
-I am not sure if this is still relevant for you but I faced the same situation and I believe I found a solution. If it is not relevant to you, perhaps it will help some other, especially given that the default WiFiClientSecure library will soon be switched to BearSSL and no support is currently being given for the existing implementation.
-Although I did not manage to speed up readString function, I used the WiFiClientSecure::read(uint8_t *buf, size_t size) function to get the data from the server:
-
- */
-/*
-  // Buffer size, 128 bytes in this case
-  #define RESP_BUFFER_LENGTH 128
-  // Pointer to actual buffer
-  uint8_t * _buffer = new uint8_t[RESP_BUFFER_LENGTH];
-  // String to hold the final response
-  String _responseString = "";
-  // If info is still available
-  while (client.available())
-  {
-      // Fill the buffer and make a note of the total read length 
-      int actualLength = client.readBytes(_buffer, RESP_BUFFER_LENGTH);
-      // If it fails for whatever reason
-      if(actualLength <= 0)
-      {
-
-      }
-      // Concatenate the buffer content to the final response string
-      // I used an arduino String for convenience
-      // but you can use strcat or whatever you see fit
-      _responseString += String((char*)_buffer).substring(0, actualLength);  
-      
-      Serial.print(_responseString);
-
-  }
-  // Clear buffer memory
-  delete[] _buffer;
-*/
-
-
-
-
-  // JsonObject& root = jsonBuffer.parseObject(response.substring(bodypos));
-
-  // String device_token = root[String("user_code")];
-
-  // return device_token;
-
-
-
-    // show("Entur API");
-    // display.update();
-
-
-  Serial.println("request sent");
-  while (client.connected()) {
-    String line = client.readString();
-    Serial.println(line);
-
-
-    // Serial.println("reply was:");
-    // Serial.println("==========");
+  //while (client.connected()) {
+//    String line = client.readString();
     // Serial.println(line);
-    // Serial.println("==========");
-    // Serial.println("closing connection");
+
 
 
     //show(line);
     //display.update();
-  }
 
-  // while (client.connected()) {
-  //   String line = client.readStringUntil('\n');
-  //   Serial.println(line);
-  //   // if (line == "\r") {
-  //   //   Serial.println("headers received");
-  //   //   break;
-  //   // }
-  // }
+    
+  //}
+
+  delay(5000);  //GET Data at every 5 seconds
 
 
-
-
-
-
-  delay(15000);  //GET Data at every 5 seconds
-
-
-  // String line = client.readStringUntil('\n');
-  // if (line.startsWith("{\"state\":\"success\"")) {
-  //   Serial.println("esp8266/Arduino CI successfull!");
-  // } else {
-  //   Serial.println("esp8266/Arduino CI has failed");
-  //   //show("esp8266/Arduino CI has failed");
-  // }
-  
 }

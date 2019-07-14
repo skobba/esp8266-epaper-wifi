@@ -1,0 +1,34 @@
+59.9112812,10.7483867,17z
+
+
+{
+    trip(
+      from: {
+          place: "NSR:StopPlace:6035"
+          name:"Sinsen, Oslo"
+      }
+      to: {
+          place:"NSR:StopPlace:58366"
+          coordinates: {
+            latitude: 59.9112812
+            longitude:10.7483867
+          }
+      }
+      numTripPatterns: 3
+      minimumTransferTime: 180
+      arriveBy: false
+    )
+  
+    {
+      tripPatterns {
+        startTime
+        duration
+        legs {
+          line {
+            name
+          }
+        }
+      }
+    }
+  }
+  

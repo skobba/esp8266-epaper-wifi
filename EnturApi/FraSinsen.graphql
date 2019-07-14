@@ -1,0 +1,40 @@
+
+# Avgangstavle - Sinsen T-bane
+
+{
+  stopPlace(id: "NSR:StopPlace:6035") {
+    id
+    name
+    estimatedCalls(
+      startTime:"2019-07-13T09:00:00+0200" 
+      #timeRange: 72100, 
+      numberOfDepartures: 10
+    ) {     
+      realtime
+      aimedArrivalTime
+      aimedDepartureTime
+      expectedArrivalTime
+      expectedDepartureTime
+      actualArrivalTime
+      actualDepartureTime
+      date
+      forBoarding
+      forAlighting
+      destinationDisplay {
+        frontText
+      }
+      quay {
+        id
+      }
+      serviceJourney {
+        journeyPattern {
+          line {
+            id
+            name
+            transportMode
+          }
+        }
+      }
+    }
+  }
+}
