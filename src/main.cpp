@@ -88,10 +88,11 @@ Unexpected character ('G' (code 71)): was expecting comma to separate Object ent
 //char graphqlQuery[] = "{\"query\":\"{\\ntrip(from:{place:\\\"NSR:StopPlace:6035\\\"name:\\\"Sinsen,Oslo\\\"}to:{place:\\\"NSR:StopPlace:58366\\\"name:\\\"Oslo,Oslo\\\"}numTripPatterns:3\\nminimumTransferTime:180\\narriveBy:false\\n)\\n\\n{\\ntripPatterns{\\nstartTime\\nduration\\nlegs{\\nline{\\nname\\n}\\n}\\n}\\n}\\n}\\n\",\"variables\":null}"; 
 // Res: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
 
-//FromSinsen-Tiny
-char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(startTime:\\\"2019-07-13T09:00:00+0200\\\"numberOfDepartures:2){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
+//FromSinsen-Tiny (with start time)
+//char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(startTime:\\\"2019-07-13T09:00:00+0200\\\"numberOfDepartures:2){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
 
-
+//FromSinsen-Tiny (withOUT!!!start time)
+char graphqlQuery[] = "{\"query\":\"{\\nstopPlace(id:\\\"NSR:StopPlace:6035\\\"){id\\nname\\nestimatedCalls(numberOfDepartures:5){expectedDepartureTime\\ndestinationDisplay{frontText}quay{id}}}}\\n\",\"variables\":null}"; 
 
 /*
 HVORFOR ER DET KUN 5 LINJER MED DENNE SPØRRINGEN!?!?!?!?!!??!
@@ -240,9 +241,40 @@ Serial.println(response);
   Serial.print("*** Reuslt: "); 
   Serial.print(response);
 
+  Serial.println("*** JSON STUFF: "); 
+
   deserializeJson(doc, response);
 
+  serializeJsonPretty(doc, Serial);
+  /*
+    PROBLEM IS NOT PARSING THE WHOLE SHIT!!!!:
+    *** JSON STUFF: 
+{
+  "data": {
+    "stopPlace": {
+      "id": "NSR:StopPlace:6035",
+      "name": null
+    }
+  }
+}
+
+   */
+  
+  //doc["data"]["stopPlace"]["estimatedCalls"].prettyPrintTo(Serial);
+
   const char* nameAvgang01 = doc["data"]["stopPlace"]["id"];
+  const char* call01expectedDepartureTime = doc["data"]["stopPlace"]["estimatedCalls"][0]["expectedDepartureTime"];
+
+  JsonArray estimatedCallsArray = doc["data"]["stopPlace"]["estimatedCalls"];
+  for(JsonVariant v : estimatedCallsArray) 
+  {
+    String value = v.as<String>();
+    Serial.println(value);
+  }
+
+
+  int myVal = estimatedCallsArray[0]["expectedDepartureTime"]; // 41
+  
   // long time = doc["time"]; // 1351824120
 
 
@@ -260,10 +292,16 @@ Serial.println(response);
 
   Serial.println("reply was:");
   Serial.println("==========");
+  Serial.println("nameAvgang01:");
   Serial.println(nameAvgang01);
+  Serial.println("myVal:");
+  Serial.println(myVal);
+  Serial.println("call01expectedDepartureTime:");
+  Serial.println(call01expectedDepartureTime);
   Serial.println("==========");
 
-  
+  show(response);
+  display.update();
 
   //////////////////////////////// TEST ////////////////////////////////
   //  Serial.println("Receiving response");

@@ -1,6 +1,17 @@
 #Ref
 https://www.youtube.com/watch?v=nfr6wddRRxo
 
+# Prettyprint
+StaticJsonDocument<200> doc;
+doc["hello"] = "world";
+serializeJsonPretty(doc, Serial);
+
+# Help
+  JsonObject& seriesArray = ooo[0] ["series"]; // results[0] is a structure with 1 member
+  JsonObject& series      = seriesArray[0]; // the first array element is a structure with 3 members
+  JsonObject& valuesArray = series["values"]; // an array of value arrays
+  JsonObject& values      = valuesArray[0]; // a nested array of values [char * and float]
+  
 # Sample
   // Reading JSON
   const size_t capacity = JSON_ARRAY_SIZE(2) + JSON_OBJECT_SIZE(3) + 30;
