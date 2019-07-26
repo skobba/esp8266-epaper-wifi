@@ -1,0 +1,18 @@
+{
+  stopPlace(id: "NSR:StopPlace:6035") {
+    id
+    name
+    estimatedCalls(
+      startTime:"2019-07-13T09:00:00+0200" 
+      numberOfDepartures: 20
+    ) {     
+      expectedDepartureTime
+      destinationDisplay {
+        frontText
+      }
+      quay {
+        id
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+Grønland
+"NSR:StopPlace:6488"
+59.9131074,10.7572453,17z
+place:"NSR:StopPlace:6488"
+coordinates: {
+  latitude: 59.9131074
+  longitude:10.7572453
+}
+
+Sinsen
+"NSR:StopPlace:6035"
+59.9374045,10.7797066,17z
+place:"NSR:StopPlace:6035"
+coordinates: {
+  latitude: 59.9374045
+  longitude:10.7797066
+}
+
+Jernbanetorget
+"NSR:StopPlace:58366"
+59.9112812,10.7483867,17z
+

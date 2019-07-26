@@ -1,0 +1,3769 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "/Users/gjermund/github_skobba/esp8266-epaper-wifi",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2019-07-04 19:35:12",
+            "filesum": 293,
+            "codesum": 8992,
+            "commentsum": 1762,
+            "blanksum": 2188,
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "filename": ".pioenvs/.sconsign.dblite",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": ".pioenvs/do-not-modify-files-here.url"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/firmware.bin",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/firmware.elf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/abi.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/base64.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cbuf.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cont.S.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cont_util.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_app_entry_noextra4k.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_eboot_command.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_flash_utils.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_i2s.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_noniso.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_phy.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_postmortem.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_si2c.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_sigma_delta.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_timer.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_waveform.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_analog.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_digital.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pulse.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pwm.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_shift.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/debug.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp-frag.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp-version.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/FS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/FunctionalInterrupt.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/gdb_hooks.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/HardwareSerial.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/heap.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/IPAddress.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libb64/cdecode.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libb64/cencode.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libc_replacements.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/MD5Builder.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Print.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Schedule.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/ScheduledFunctions.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/sntp-lwip2.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_cache.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_check.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_gc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_hydrogen.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_nucleus.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs_api.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs_hal.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/sqrt32.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/StackThunk.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Stream.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/StreamString.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/time.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Tone.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/uart.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/umm_malloc/umm_malloc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Updater.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/WMath.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/WString.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 245,
+                    "comment": 16,
+                    "filename": ".pioenvs/nodemcuv2/ld/local.eagle.app.v6.common.ld"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib150/ESP8266HTTPClient/ESP8266HTTPClient.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib150/libESP8266HTTPClient.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib4eb/libSPI.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib4eb/SPI/SPI.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxEPD.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxFont_GFX.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDE0213B1/GxGDE0213B1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH0213B72/GxGDEH0213B72.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH029A1/GxGDEH029A1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEP015OC1/GxGDEP015OC1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z04/GxGDEW0154Z04.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z17/GxGDEW0154Z17.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213I5F/GxGDEW0213I5F.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213Z16/GxGDEW0213Z16.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027C44/GxGDEW027C44.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027W3/GxGDEW027W3.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029T5/GxGDEW029T5.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029Z10/GxGDEW029Z10.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042T2/GxGDEW042T2.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042Z15/GxGDEW042Z15.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0583T7/GxGDEW0583T7.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075T8/GxGDEW075T8.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075Z09/GxGDEW075Z09.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO_SPI/GxIO_SPI.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/libGxEPD_ID2951.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/BearSSLHelpers.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/CertStoreBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFi.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiAP.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiGeneric.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiMulti.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiScan.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA-WPS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClient.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureAxTLS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServer.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureAxTLS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiUdp.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/libESP8266WiFi.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_GFX.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_SPITFT.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/glcdfont.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/libAdafruit GFX Library_ID13.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/nodemcuv2/libdbb/libArduinoJson_ID64.a"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libFrameworkArduino.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/nodemcuv2/libFrameworkArduinoVariant.a"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/spiffs.bin",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/src/main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/test/output_export.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/structure.hash"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.clang-format"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.gitattributes"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.github/FUNDING.yml"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 2,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.github/ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.gitignore"
+                },
+                {
+                    "blank": 4,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.mbedignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 132,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.travis.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/appveyor.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/ArduinoJson.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 366,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/banner.svg"
+                },
+                {
+                    "blank": 64,
+                    "code": 398,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CHANGELOG.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CMakeLists.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CONTRIBUTING.md"
+                },
+                {
+                    "blank": 24,
+                    "code": 64,
+                    "comment": 64,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonConfigFile/JsonConfigFile.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 16,
+                    "comment": 50,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonGeneratorExample/JsonGeneratorExample.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 56,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonHttpClient/JsonHttpClient.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 24,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonParserExample/JsonParserExample.ino"
+                },
+                {
+                    "blank": 20,
+                    "code": 45,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonServer/JsonServer.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 40,
+                    "comment": 47,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonUdpBeacon/JsonUdpBeacon.ino"
+                },
+                {
+                    "blank": 10,
+                    "code": 26,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/MsgPackParser/MsgPackParser.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 20,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/ProgmemExample/ProgmemExample.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 21,
+                    "comment": 42,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/StringExample/StringExample.ino"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/keywords.txt"
+                },
+                {
+                    "blank": 1,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 2,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/LICENSE.md"
+                },
+                {
+                    "blank": 30,
+                    "code": 80,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/README.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 7,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson.h"
+                },
+                {
+                    "blank": 10,
+                    "code": 56,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 19,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayFunctions.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 13,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayImpl.hpp"
+                },
+                {
+                    "blank": 27,
+                    "code": 91,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayIterator.hpp"
+                },
+                {
+                    "blank": 34,
+                    "code": 110,
+                    "comment": 12,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayRef.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 26,
+                    "comment": 14,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayShortcuts.hpp"
+                },
+                {
+                    "blank": 28,
+                    "code": 113,
+                    "comment": 25,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ElementProxy.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 47,
+                    "comment": 10,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/Utilities.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 41,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionData.hpp"
+                },
+                {
+                    "blank": 24,
+                    "code": 136,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionImpl.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/compatibility.hpp"
+                },
+                {
+                    "blank": 34,
+                    "code": 113,
+                    "comment": 30,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Configuration.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/ArduinoStreamReader.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 50,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/CharPointerReader.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 90,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/DeserializationError.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 55,
+                    "comment": 17,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/deserialize.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 34,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/FlashStringReader.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 22,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/IteratorReader.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/NestingLimit.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 21,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/StdStreamReader.hpp"
+                },
+                {
+                    "blank": 18,
+                    "code": 67,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/BasicJsonDocument.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/DynamicJsonDocument.hpp"
+                },
+                {
+                    "blank": 52,
+                    "code": 203,
+                    "comment": 53,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/JsonDocument.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 35,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/StaticJsonDocument.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 25,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/EscapeSequence.hpp"
+                },
+                {
+                    "blank": 71,
+                    "code": 317,
+                    "comment": 42,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonDeserializer.hpp"
+                },
+                {
+                    "blank": 32,
+                    "code": 89,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonSerializer.hpp"
+                },
+                {
+                    "blank": 17,
+                    "code": 63,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/PrettyJsonSerializer.hpp"
+                },
+                {
+                    "blank": 29,
+                    "code": 117,
+                    "comment": 12,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/TextFormatter.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 19,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/Utf8.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/Alignment.hpp"
+                },
+                {
+                    "blank": 22,
+                    "code": 86,
+                    "comment": 13,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/MemoryPool.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 35,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringBuilder.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringSlot.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 49,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/SerializedValue.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/Visitable.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 29,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/endianess.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/ieee754.hpp"
+                },
+                {
+                    "blank": 64,
+                    "code": 276,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackDeserializer.hpp"
+                },
+                {
+                    "blank": 25,
+                    "code": 158,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackSerializer.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Namespace.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 86,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/convertNumber.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Float.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatParts.hpp"
+                },
+                {
+                    "blank": 26,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatTraits.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 12,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Integer.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseFloat.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseInteger.hpp"
+                },
+                {
+                    "blank": 26,
+                    "code": 124,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseNumber.hpp"
+                },
+                {
+                    "blank": 33,
+                    "code": 131,
+                    "comment": 26,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/MemberProxy.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 35,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectFunctions.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 40,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectImpl.hpp"
+                },
+                {
+                    "blank": 29,
+                    "code": 91,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectIterator.hpp"
+                },
+                {
+                    "blank": 44,
+                    "code": 159,
+                    "comment": 38,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectRef.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 39,
+                    "comment": 24,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectShortcuts.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 41,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/Pair.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantCasts.hpp"
+                },
+                {
+                    "blank": 32,
+                    "code": 197,
+                    "comment": 16,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantComparisons.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOperators.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 25,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOr.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantShortcuts.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/alias_cast.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 7,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/assert.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 32,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/attributes.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/ctype.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 22,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/gsl/not_null.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 32,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/limits.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 15,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/math.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 14,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/mpl/max.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 15,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/safe_strcmp.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/conditional.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_array.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 14,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_const.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 24,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_same.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 28,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 24,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 36,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/utility.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DummyWriter.hpp"
+                },
+                {
+                    "blank": 17,
+                    "code": 56,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DynamicStringWriter.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/measure.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 45,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/serialize.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 27,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StaticStringWriter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 23,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StreamWriter.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 44,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ArduinoStringAdapter.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 38,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ConstRamStringAdapter.hpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 43,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/FlashStringAdapter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 33,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/RamStringAdapter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 39,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedFlashStringAdapter.hpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 36,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedRamStringAdapter.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 41,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StlStringAdapter.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 43,
+                    "comment": 8,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/String.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 24,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StringAdapters.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 15,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringCopier.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 26,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringMover.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringStorage.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/SlotFunctions.hpp"
+                },
+                {
+                    "blank": 20,
+                    "code": 68,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAs.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAsImpl.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 37,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantContent.hpp"
+                },
+                {
+                    "blank": 71,
+                    "code": 284,
+                    "comment": 10,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantData.hpp"
+                },
+                {
+                    "blank": 33,
+                    "code": 130,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantFunctions.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 125,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantImpl.hpp"
+                },
+                {
+                    "blank": 47,
+                    "code": 228,
+                    "comment": 111,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantRef.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 64,
+                    "comment": 13,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantSlot.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantTo.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/version.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/SUPPORT.md"
+                },
+                {
+                    "blank": 6,
+                    "code": 61,
+                    "comment": 4,
+                    "filename": ".travis.yml"
+                },
+                {
+                    "blank": 65,
+                    "code": 442,
+                    "comment": 101,
+                    "filename": "EXAMPLE.cpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 100,
+                    "comment": 1,
+                    "filename": "IMG_0001.h"
+                },
+                {
+                    "blank": 8,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "include/README"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "JSON/sinsen.1.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "JSON/sinsen.json"
+                },
+                {
+                    "blank": 9,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "lib/README"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 9,
+                    "filename": "platformio.ini"
+                },
+                {
+                    "blank": 7,
+                    "code": 20,
+                    "comment": 5,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "README/README-curl.1.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 14,
+                    "comment": 2,
+                    "filename": "README/README-curl.2.md"
+                },
+                {
+                    "blank": 12,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "README/README-curl.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "README/README-graphql-esc.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "README/README-graphql-frode.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sample.md"
+                },
+                {
+                    "blank": 8,
+                    "code": 10,
+                    "comment": 3,
+                    "filename": "README/README-graphql-short.md"
+                },
+                {
+                    "blank": 4,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "README/README-graphql-sinsen-jernbanetorget-escaped.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sinsen-jernbanetorget.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sinsen.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "README/README-libs.md"
+                },
+                {
+                    "blank": 32,
+                    "code": 78,
+                    "comment": 23,
+                    "filename": "README/README-ruter.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "README/README-ssl.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "README/srt-esc.txt"
+                },
+                {
+                    "blank": 76,
+                    "code": 82,
+                    "comment": 111,
+                    "filename": "src/main.cpp"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/myspace.code-workspace"
+                },
+                {
+                    "blank": 53,
+                    "code": 103,
+                    "comment": 28,
+                    "filename": "test/main_REST.cpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": "test/README"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 2,
+                    "filename": "TEST1.md"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2019-07-04 19:50:56",
+            "filesum": 293,
+            "codesum": 8992,
+            "commentsum": 1762,
+            "blanksum": 2188,
+            "filelist": [
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "filename": ".pioenvs/.sconsign.dblite",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": ".pioenvs/do-not-modify-files-here.url"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/firmware.bin",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/firmware.elf",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/abi.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/base64.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cbuf.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cont.S.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/cont_util.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_app_entry_noextra4k.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_eboot_command.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_flash_utils.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_i2s.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_noniso.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_phy.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_postmortem.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_si2c.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_sigma_delta.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_timer.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_waveform.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_analog.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_digital.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pulse.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_pwm.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/core_esp8266_wiring_shift.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/debug.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp-frag.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp-version.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Esp.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/FS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/FunctionalInterrupt.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/gdb_hooks.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/HardwareSerial.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/heap.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/IPAddress.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libb64/cdecode.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libb64/cencode.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/libc_replacements.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/MD5Builder.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Print.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Schedule.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/ScheduledFunctions.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/sntp-lwip2.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_cache.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_check.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_gc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_hydrogen.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs/spiffs_nucleus.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs_api.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/spiffs_hal.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/sqrt32.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/StackThunk.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Stream.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/StreamString.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/time.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Tone.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/uart.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/umm_malloc/umm_malloc.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/Updater.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/WMath.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/FrameworkArduino/WString.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 245,
+                    "comment": 16,
+                    "filename": ".pioenvs/nodemcuv2/ld/local.eagle.app.v6.common.ld"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib150/ESP8266HTTPClient/ESP8266HTTPClient.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib150/libESP8266HTTPClient.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib4eb/libSPI.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib4eb/SPI/SPI.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxEPD.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxFont_GFX.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDE0213B1/GxGDE0213B1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH0213B72/GxGDEH0213B72.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEH029A1/GxGDEH029A1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEP015OC1/GxGDEP015OC1.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z04/GxGDEW0154Z04.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0154Z17/GxGDEW0154Z17.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213I5F/GxGDEW0213I5F.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0213Z16/GxGDEW0213Z16.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027C44/GxGDEW027C44.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW027W3/GxGDEW027W3.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029T5/GxGDEW029T5.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW029Z10/GxGDEW029Z10.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042T2/GxGDEW042T2.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW042Z15/GxGDEW042Z15.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW0583T7/GxGDEW0583T7.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075T8/GxGDEW075T8.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxGDEW075Z09/GxGDEW075Z09.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/GxEPD_ID2951/GxIO/GxIO_SPI/GxIO_SPI.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib547/libGxEPD_ID2951.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/BearSSLHelpers.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/CertStoreBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFi.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiAP.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiGeneric.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiMulti.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiScan.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA-WPS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/ESP8266WiFiSTA.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClient.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureAxTLS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiClientSecureBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServer.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureAxTLS.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiServerSecureBearSSL.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/ESP8266WiFi/WiFiUdp.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/lib6bc/libESP8266WiFi.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_GFX.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/Adafruit_SPITFT.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/Adafruit GFX Library_ID13/glcdfont.c.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libb4c/libAdafruit GFX Library_ID13.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/nodemcuv2/libdbb/libArduinoJson_ID64.a"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/libFrameworkArduino.a",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/nodemcuv2/libFrameworkArduinoVariant.a"
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/spiffs.bin",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/src/main.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": ".pioenvs/nodemcuv2/test/output_export.cpp.o",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".pioenvs/structure.hash"
+                },
+                {
+                    "blank": 1,
+                    "code": 4,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.clang-format"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.gitattributes"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.github/FUNDING.yml"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 2,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.github/ISSUE_TEMPLATE.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.gitignore"
+                },
+                {
+                    "blank": 4,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.mbedignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 132,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/.travis.yml"
+                },
+                {
+                    "blank": 0,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/appveyor.yml"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/ArduinoJson.h"
+                },
+                {
+                    "blank": 1,
+                    "code": 366,
+                    "comment": 1,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/banner.svg"
+                },
+                {
+                    "blank": 64,
+                    "code": 398,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CHANGELOG.md"
+                },
+                {
+                    "blank": 5,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CMakeLists.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/CONTRIBUTING.md"
+                },
+                {
+                    "blank": 24,
+                    "code": 64,
+                    "comment": 64,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonConfigFile/JsonConfigFile.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 16,
+                    "comment": 50,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonGeneratorExample/JsonGeneratorExample.ino"
+                },
+                {
+                    "blank": 15,
+                    "code": 56,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonHttpClient/JsonHttpClient.ino"
+                },
+                {
+                    "blank": 11,
+                    "code": 24,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonParserExample/JsonParserExample.ino"
+                },
+                {
+                    "blank": 20,
+                    "code": 45,
+                    "comment": 45,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonServer/JsonServer.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 40,
+                    "comment": 47,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/JsonUdpBeacon/JsonUdpBeacon.ino"
+                },
+                {
+                    "blank": 10,
+                    "code": 26,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/MsgPackParser/MsgPackParser.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 20,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/ProgmemExample/ProgmemExample.ino"
+                },
+                {
+                    "blank": 14,
+                    "code": 21,
+                    "comment": 42,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/examples/StringExample/StringExample.ino"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/keywords.txt"
+                },
+                {
+                    "blank": 1,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/library.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 2,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/library.properties"
+                },
+                {
+                    "blank": 4,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/LICENSE.md"
+                },
+                {
+                    "blank": 30,
+                    "code": 80,
+                    "comment": 39,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/README.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 7,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson.h"
+                },
+                {
+                    "blank": 10,
+                    "code": 56,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 19,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayFunctions.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 13,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayImpl.hpp"
+                },
+                {
+                    "blank": 27,
+                    "code": 91,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayIterator.hpp"
+                },
+                {
+                    "blank": 34,
+                    "code": 110,
+                    "comment": 12,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayRef.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 26,
+                    "comment": 14,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ArrayShortcuts.hpp"
+                },
+                {
+                    "blank": 28,
+                    "code": 113,
+                    "comment": 25,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/ElementProxy.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 47,
+                    "comment": 10,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Array/Utilities.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 41,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionData.hpp"
+                },
+                {
+                    "blank": 24,
+                    "code": 136,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Collection/CollectionImpl.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/compatibility.hpp"
+                },
+                {
+                    "blank": 34,
+                    "code": 113,
+                    "comment": 30,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Configuration.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/ArduinoStreamReader.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 50,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/CharPointerReader.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 90,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/DeserializationError.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 55,
+                    "comment": 17,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/deserialize.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 34,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/FlashStringReader.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 22,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/IteratorReader.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/NestingLimit.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 21,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/StdStreamReader.hpp"
+                },
+                {
+                    "blank": 18,
+                    "code": 67,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/BasicJsonDocument.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 14,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/DynamicJsonDocument.hpp"
+                },
+                {
+                    "blank": 52,
+                    "code": 203,
+                    "comment": 53,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/JsonDocument.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 35,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Document/StaticJsonDocument.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 25,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/EscapeSequence.hpp"
+                },
+                {
+                    "blank": 71,
+                    "code": 317,
+                    "comment": 42,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonDeserializer.hpp"
+                },
+                {
+                    "blank": 32,
+                    "code": 89,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/JsonSerializer.hpp"
+                },
+                {
+                    "blank": 17,
+                    "code": 63,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/PrettyJsonSerializer.hpp"
+                },
+                {
+                    "blank": 29,
+                    "code": 117,
+                    "comment": 12,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/TextFormatter.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 19,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Json/Utf8.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 18,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/Alignment.hpp"
+                },
+                {
+                    "blank": 22,
+                    "code": 86,
+                    "comment": 13,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/MemoryPool.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 35,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringBuilder.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Memory/StringSlot.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 49,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/SerializedValue.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Misc/Visitable.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 29,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/endianess.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/ieee754.hpp"
+                },
+                {
+                    "blank": 64,
+                    "code": 276,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackDeserializer.hpp"
+                },
+                {
+                    "blank": 25,
+                    "code": 158,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/MsgPack/MsgPackSerializer.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Namespace.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 86,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/convertNumber.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Float.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 64,
+                    "comment": 8,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatParts.hpp"
+                },
+                {
+                    "blank": 26,
+                    "code": 144,
+                    "comment": 29,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/FloatTraits.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 12,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/Integer.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseFloat.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 12,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseInteger.hpp"
+                },
+                {
+                    "blank": 26,
+                    "code": 124,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Numbers/parseNumber.hpp"
+                },
+                {
+                    "blank": 33,
+                    "code": 131,
+                    "comment": 26,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/MemberProxy.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 35,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectFunctions.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 40,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectImpl.hpp"
+                },
+                {
+                    "blank": 29,
+                    "code": 91,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectIterator.hpp"
+                },
+                {
+                    "blank": 44,
+                    "code": 159,
+                    "comment": 38,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectRef.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 39,
+                    "comment": 24,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/ObjectShortcuts.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 41,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Object/Pair.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 16,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantCasts.hpp"
+                },
+                {
+                    "blank": 32,
+                    "code": 197,
+                    "comment": 16,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantComparisons.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOperators.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 25,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantOr.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 16,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Operators/VariantShortcuts.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/alias_cast.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 7,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/assert.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 32,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/attributes.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/ctype.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 22,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/gsl/not_null.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 32,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/limits.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 15,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/math.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 14,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/mpl/max.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 15,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/safe_strcmp.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 15,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/conditional.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 9,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_array.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 14,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_const.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 10,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 24,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 8,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_same.hpp"
+                },
+                {
+                    "blank": 12,
+                    "code": 28,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 24,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 36,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 11,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 8,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/utility.hpp"
+                },
+                {
+                    "blank": 4,
+                    "code": 12,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DummyWriter.hpp"
+                },
+                {
+                    "blank": 17,
+                    "code": 56,
+                    "comment": 7,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DynamicStringWriter.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 11,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/measure.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 45,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/serialize.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 27,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StaticStringWriter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 23,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StreamWriter.hpp"
+                },
+                {
+                    "blank": 16,
+                    "code": 44,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ArduinoStringAdapter.hpp"
+                },
+                {
+                    "blank": 14,
+                    "code": 38,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/ConstRamStringAdapter.hpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 43,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/FlashStringAdapter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 33,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/RamStringAdapter.hpp"
+                },
+                {
+                    "blank": 11,
+                    "code": 39,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedFlashStringAdapter.hpp"
+                },
+                {
+                    "blank": 13,
+                    "code": 36,
+                    "comment": 5,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/SizedRamStringAdapter.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 41,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StlStringAdapter.hpp"
+                },
+                {
+                    "blank": 15,
+                    "code": 43,
+                    "comment": 8,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/String.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 24,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Strings/StringAdapters.hpp"
+                },
+                {
+                    "blank": 7,
+                    "code": 15,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringCopier.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 26,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringMover.hpp"
+                },
+                {
+                    "blank": 9,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringStorage/StringStorage.hpp"
+                },
+                {
+                    "blank": 6,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/SlotFunctions.hpp"
+                },
+                {
+                    "blank": 20,
+                    "code": 68,
+                    "comment": 9,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAs.hpp"
+                },
+                {
+                    "blank": 8,
+                    "code": 30,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantAsImpl.hpp"
+                },
+                {
+                    "blank": 10,
+                    "code": 37,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantContent.hpp"
+                },
+                {
+                    "blank": 71,
+                    "code": 284,
+                    "comment": 10,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantData.hpp"
+                },
+                {
+                    "blank": 33,
+                    "code": 130,
+                    "comment": 4,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantFunctions.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 125,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantImpl.hpp"
+                },
+                {
+                    "blank": 47,
+                    "code": 228,
+                    "comment": 111,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantRef.hpp"
+                },
+                {
+                    "blank": 21,
+                    "code": 64,
+                    "comment": 13,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantSlot.hpp"
+                },
+                {
+                    "blank": 5,
+                    "code": 20,
+                    "comment": 6,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Variant/VariantTo.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 3,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/src/ArduinoJson/version.hpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": ".piolibdeps/ArduinoJson_ID64/SUPPORT.md"
+                },
+                {
+                    "blank": 6,
+                    "code": 61,
+                    "comment": 4,
+                    "filename": ".travis.yml"
+                },
+                {
+                    "blank": 65,
+                    "code": 442,
+                    "comment": 101,
+                    "filename": "EXAMPLE.cpp"
+                },
+                {
+                    "blank": 2,
+                    "code": 100,
+                    "comment": 1,
+                    "filename": "IMG_0001.h"
+                },
+                {
+                    "blank": 8,
+                    "code": 13,
+                    "comment": 1,
+                    "filename": "include/README"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "JSON/sinsen.1.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "JSON/sinsen.json"
+                },
+                {
+                    "blank": 9,
+                    "code": 37,
+                    "comment": 2,
+                    "filename": "lib/README"
+                },
+                {
+                    "blank": 1,
+                    "code": 8,
+                    "comment": 9,
+                    "filename": "platformio.ini"
+                },
+                {
+                    "blank": 7,
+                    "code": 20,
+                    "comment": 5,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "README/README-curl.1.md"
+                },
+                {
+                    "blank": 10,
+                    "code": 14,
+                    "comment": 2,
+                    "filename": "README/README-curl.2.md"
+                },
+                {
+                    "blank": 12,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "README/README-curl.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "README/README-graphql-esc.txt"
+                },
+                {
+                    "blank": 4,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "README/README-graphql-frode.md"
+                },
+                {
+                    "blank": 2,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sample.md"
+                },
+                {
+                    "blank": 8,
+                    "code": 10,
+                    "comment": 3,
+                    "filename": "README/README-graphql-short.md"
+                },
+                {
+                    "blank": 4,
+                    "code": 27,
+                    "comment": 1,
+                    "filename": "README/README-graphql-sinsen-jernbanetorget-escaped.md"
+                },
+                {
+                    "blank": 1,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sinsen-jernbanetorget.md"
+                },
+                {
+                    "blank": 7,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "README/README-graphql-sinsen.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "README/README-libs.md"
+                },
+                {
+                    "blank": 32,
+                    "code": 78,
+                    "comment": 23,
+                    "filename": "README/README-ruter.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "README/README-ssl.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "README/srt-esc.txt"
+                },
+                {
+                    "blank": 76,
+                    "code": 82,
+                    "comment": 111,
+                    "filename": "src/main.cpp"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/myspace.code-workspace"
+                },
+                {
+                    "blank": 53,
+                    "code": 103,
+                    "comment": 28,
+                    "filename": "test/main_REST.cpp"
+                },
+                {
+                    "blank": 3,
+                    "code": 8,
+                    "comment": 1,
+                    "filename": "test/README"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 2,
+                    "filename": "TEST1.md"
+                }
+            ]
+        }
+    ]
+}

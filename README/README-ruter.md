@@ -1,12 +1,18 @@
 # Ref
+## GraphQL Tool
+https://api.entur.io/journey-planner/v2/ide/
+## GraphQL API
+https://api.entur.io/journey-planner/v2/graphql
+Request URL: https://api.entur.io/journey-planner/v2/graphql
+Request Method: POST
+
 ## Help
 https://reisapi.ruter.no/help
 ## Mon
 https://mon.ruter.no/monitor/3012110/T%C3%A5rn%C3%A5sen/
 ## Find nearby stops
 https://en-tur.no/nearby-stop-place-detail?id=NSR:StopPlace:6505
-## GraphQL
-https://api.entur.io/journey-planner/v2/graphql
+
 
 
 # IDs
@@ -46,7 +52,7 @@ curl https://reisapi.ruter.no/Trip/GetTrip/333
 
 
 
-curl https://reisapi.ruter.no/Travel/GetTravels?fromPlace=3010011&toPlace=1000021097&isafter=0
+curl https://reisapi.ruter.no/Travel/GetTravels?fromPlace=3010011&toPlace=3011324&isafter=0
 
 # all data about a stop
 curl https://reisapi.ruter.no/Place/GetStop/3012110

@@ -1,0 +1,189 @@
+== Info:   Trying 18.185.23.230...
+== Info: TCP_NODELAY set
+== Info: Connected to api.entur.io (18.185.23.230) port 443 (#0)
+== Info: ALPN, offering h2
+== Info: ALPN, offering http/1.1
+== Info: Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+== Info: successfully set certificate verify locations:
+== Info:   CAfile: /etc/ssl/cert.pem
+  CApath: none
+== Info: TLSv1.2 (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 218 bytes (0xda)
+0000: ......D..cn.....K...#..-..d...o)..V..s..T.0.,.(.$.......k.9.....
+0040: ............=.5...../.+.'.#.......g.3...E...<./...A.............
+0080: Y.........api.entur.io..........................................
+00c0: ...............h2.http/1.1
+== Info: TLSv1.2 (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 108 bytes (0x6c)
+0000: ...h......Aw+..R..tz..0.!....c.. ..7.( ..%.U...q.y......(..&&.*h
+0040: mK.L.\ .0.. ........................http/1.1
+== Info: TLSv1.2 (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 2790 bytes (0xae6)
+0000: .........L0..H0..0........}...be.......x.0...*.H........0\1.0...
+0040: U....US1.0...U....DigiCert Inc1.0...U....www.digicert.com1.0...U
+0080: ....Thawte RSA CA 20180...180312000000Z..200311120000Z0D1.0...U.
+00c0: ...NO1.0...U....Oslo1.0...U....Entur AS1.0...U....*.entur.io0.."
+0100: 0...*.H.............0.........p[B.LCH-...k+.N.....O..(..#.....P.
+0140: >...<.....^zF..B..2....E............M.I......9.F.......0 ...D..
+0180: ....YB<..-*D..(Q....r.u...i.}.a.B....a......8.....v..X."........
+01c0: ....a.O{......S.'..J^.......b..........|.H.QCF..s......R..UD..2.
+0200: d<...B.......X.j~J...=....:...........0...0...U.#..0.....^eT.0x.
+0240: ....jY....Z0...U..........f.........rx. t.0...U....0...*.entur.i
+0280: o..entur.io0...U...........0...U.%..0...+.........+.......0:..U.
+02c0: ..3010/.-.+.)http://cdp.thawte.com/ThawteRSACA2018.crl0L..U. .E0
+0300: C07..`.H...l..0*0(..+.........https://www.digicert.com/CPS0...g.
+0340: ....0o..+........c0a0$..+.....0...http://status.thawte.com09..+.
+0380: ....0..-http://cacerts.thawte.com/ThawteRSACA2018.crt0...U....0.
+03c0: 0..~..+.....y......n...j.h.v.......X......gp.<5.......w.........
+0400: b.fF......G0E.!....!.D.3.1...Zh...h..6....7@C..b. ...j.....4..`.
+0440: `U</...J+...N.....v.oSv.1.1.....Q..w.......).....7.....b.fG....
+0480: ..G0E.!..|i..M.m....r...p....~\jt....x... .V...y.J.MVI..o......T
+04c0: \.im._..TD.v.......q...#...{G8W...R....d6.......b.fGD.....G0E.!.
+0500: ..Mv...>..../z.M.n#@....4.-....y. x.-...w.r.!`t....k..  ...m.;..
+0540: ..0...*.H.............d..c......e|.).L....g....p...yZ.....e.G.O.
+0580: .1....}......g.% 6....b.....T..1.=..]}...Wd.....Fd...x4.2v.;.o_.
+05c0: .}\.Ik.)i.......e.Q.98B...+.&p...=.,0.A..Bg...9..zD.U.......x...
+0600: 1KC...C.Sf.3%4@O$].B..G.....s.{.<.L}.z-.6r.d1.`H......h.=^...F/.
+0640: ..&.~.D.......F...../5...0...0..q........Z...o~.l!....p+0...*.H.
+0680: .......0a1.0...U....US1.0...U....DigiCert Inc1.0...U....www.digi
+06c0: cert.com1 0...U....DigiCert Global Root CA0...171106122352Z..271
+0700: 106122352Z0\1.0...U....US1.0...U....DigiCert Inc1.0...U....www.d
+0740: igicert.com1.0...U....Thawte RSA CA 20180.."0...*.H.............
+0780: 0..........^.S....C/...V...C...zU.z.K../.R.... [o."...-x....N...
+07c0: ...>...>J..2..N...Gs.>.....$...f.kh..-..r...8Ze...S.........un.j
+0800: 1).....`x.%.&Y...R5....(.......v\e.8.y.|.I#&.RPf.Ya....L........
+0840: .....L&.{....t[X~.c../E.z<...|...g..h..c`.X._.U....;|...fD......
+0880: ..xA$T...........@0..<0...U........^eT.0x.....jY....Z0...U.#..0.
+08c0: ....P5V.L.f........=.U0...U...........0...U.%..0...+.........+..
+0900: .....0...U.......0.......04..+........(0&0$..+.....0...http://oc
+0940: sp.digicert.com0B..U...;0907.5.3.1http://crl3.digicert.com/DigiC
+0980: ertGlobalRootCA.crl0=..U. .60402..U. .0*0(..+.........https://ww
+09c0: w.digicert.com/CPS0...*.H.............DM.......d...".v.e.e.;%7J.
+0a00: ....|...30.....o.r.~.p\Q.2.../.V..mU........[Q.._..S...%..H.Tn.{
+0a40: -e.._.N..3..........%a....5iP1d.y..1_.Y2.. .S.e~..cCZ..q.....g..
+0a80: .....:..Q.r|g..w.....^..t..<....*./.....&`.P..}..Y_.o./).....XX.
+0ac0: ..lA+@..9.P'.@.J=6ey..3_)SS.^.B.....({
+== Info: TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+<= Recv SSL data, 333 bytes (0x14d)
+0000: ...I...A..S.fv.t..G........!..;.o....7.:..r..D....._ ...B....sSj
+0040: .]?.....m....k...b......?.I.B-.H._;..?.4b..|.R..v4.j,.U..6.:.F.b
+0080: ....\...b.#.......6.P..g}..a...._.vZ.F....:u...8........z..c.R0.
+00c0: .g.I....,......'...2.........s_(......F_..V.J..;...0......... L
+0100: F..9?.X<....0:...F..c.....7.4/Pt.fJ.<..t>..9K.........S6.p....t.
+0140: ...9}..&....I
+== Info: TLSv1.2 (IN), TLS handshake, Server finished (14):
+<= Recv SSL data, 4 bytes (0x4)
+0000: ....
+== Info: TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+=> Send SSL data, 70 bytes (0x46)
+0000: ...BA.O@...X..}.]c.i..K......:.<kR9..)..N...E,~........5......2.
+0040: V;e..D
+== Info: TLSv1.2 (OUT), TLS change cipher, Client hello (1):
+=> Send SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.2 (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 16 bytes (0x10)
+0000: ......f.!..4...8
+== Info: TLSv1.2 (IN), TLS change cipher, Client hello (1):
+<= Recv SSL data, 1 bytes (0x1)
+0000: .
+== Info: TLSv1.2 (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 16 bytes (0x10)
+0000: .........,...t..
+== Info: SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+== Info: ALPN, server accepted to use http/1.1
+== Info: Server certificate:
+== Info:  subject: C=NO; L=Oslo; O=Entur AS; CN=*.entur.io
+== Info:  start date: Mar 12 00:00:00 2018 GMT
+== Info:  expire date: Mar 11 12:00:00 2020 GMT
+== Info:  subjectAltName: host "api.entur.io" matched cert's "*.entur.io"
+== Info:  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+== Info:  SSL certificate verify ok.
+=> Send header, 156 bytes (0x9c)
+0000: POST /journey-planner/v2/graphql HTTP/1.1
+002b: Host: api.entur.io
+003f: User-Agent: curl/7.54.0
+0058: Accept: */*
+0065: Content-Type: application/json
+0085: Content-Length: 285
+009a: 
+=> Send data, 285 bytes (0x11d)
+0000: {"query":"{\ntrip(from:{place:\"NSR:StopPlace:6035\"name:\"Sinse
+0040: n,Oslo\"}to:{place:\"NSR:StopPlace:58366\"name:\"Oslo,Oslo\"}..n
+0080: umTripPatterns:3\nminimumTransferTime:180\narriveBy:false\n)\n\n
+00c0: {\ntripPatterns{\nstartTime\nduration\nlegs{\nline{\nname\n}\n}\
+0100: n}\n}\n}\n","variables":null}
+== Info: upload completely sent off: 285 out of 285 bytes
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Fri, 05 Jul 2019 14:49:49 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Content-Type: application/json
+<= Recv header, 21 bytes (0x15)
+0000: Content-Length: 354
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 13 bytes (0xd)
+0000: Accept: */*
+<= Recv header, 23 bytes (0x17)
+0000: Accept-Encoding: gzip
+<= Recv header, 41 bytes (0x29)
+0000: Access-Control-Allow-Credentials: false
+<= Recv header, 67 bytes (0x43)
+0000: Breadcrumbid: ID-ishtar-774f7cdf5c-k7vwz-1562065562802-0-1225897
+0040: 4
+<= Recv header, 38 bytes (0x26)
+0000: Et-Client-Name: unkown-195.43.63.153
+<= Recv header, 22 bytes (0x16)
+0000: Et-Client-Type: trip
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 26 bytes (0x1a)
+0000: X-Forwarded-Proto: https
+<= Recv header, 63 bytes (0x3f)
+0000: Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+<= Recv header, 18 bytes (0x12)
+0000: Pragma: no-cache
+<= Recv header, 12 bytes (0xc)
+0000: Expires: 0
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 64 bytes (0x40)
+0000: Strict-Transport-Security: max-age=31536000; includeSubDomains
+<= Recv header, 23 bytes (0x17)
+0000: X-Frame-Options: DENY
+<= Recv header, 33 bytes (0x21)
+0000: X-XSS-Protection: 1; mode=block
+<= Recv header, 20 bytes (0x14)
+0000: X-Robots-Tag: none
+<= Recv header, 24 bytes (0x18)
+0000: Rate-Limit-Allowed: 30
+<= Recv header, 20 bytes (0x14)
+0000: Rate-Limit-Used: 1
+<= Recv header, 26 bytes (0x1a)
+0000: Rate-Limit-Available: 29
+<= Recv header, 32 bytes (0x20)
+0000: Rate-Limit-Range: "per-minute"
+<= Recv header, 65 bytes (0x41)
+0000: Rate-Limit-Expiry-Time: Fri Jul 05 2019 14:50:33 GMT-0000 (UTC)
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 137 bytes (0x89)
+0000: Access-Control-Allow-Headers: origin, x-requested-with, accept, 
+0040: ET-Client-Name, ET-Client-Id, Content-Type, X-Correlation-Id, en
+0080: tur-pos
+<= Recv header, 33 bytes (0x21)
+0000: Access-Control-Max-Age: 3628800
+<= Recv header, 54 bytes (0x36)
+0000: Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 354 bytes (0x162)
+0000: {"data":{"trip":{"tripPatterns":[{"startTime":"2019-07-05T16:57:
+0040: 05+0200","duration":540,"legs":[{"line":{"name":"Sognsvann - Ves
+0080: tli"}}]},{"startTime":"2019-07-05T16:56:21+0200","duration":1015
+00c0: ,"legs":[{"line":{"name":"Vestli - Bergkrystallen"}}]},{"startTi
+0100: me":"2019-07-05T17:11:24+0200","duration":540,"legs":[{"line":{"
+0140: name":"Sognsvann - Vestli"}}]}]}}}
+== Info: Connection #0 to host api.entur.io left intact
