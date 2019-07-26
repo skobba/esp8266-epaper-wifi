@@ -1,4 +1,5 @@
 # esp8266-epaper-wifi
+Kobling mot ruter.
 
 # Libraries
 https://docs.platformio.org/en/latest/librarymanager/quickstart.html
